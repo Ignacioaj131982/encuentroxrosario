@@ -1,4 +1,7 @@
-function activarAnimacion(selector) {
-    var elemento = document.querySelector(selector);
-    elemento.classList.toggle('animado');
+function activarAnimacion() {
+    var elemento1 = document.querySelector('.encontrarnos');
+    var elemento2 = document.querySelector('.barrioxbarrio')
+    elemento1.classList.toggle('animado');
+    elemento2.classList.toggle('animado');
 }
+
