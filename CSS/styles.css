@@ -137,7 +137,7 @@ body {
 
 #fondo2 {
     width: 100%;
-        height: 100vh;
+        height: 70vh;
         background-image: url('../img/IMG-20231207-WA0044.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -149,6 +149,8 @@ body {
     border-radius: 1em;
     padding: 0.3em;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
     font-size: 1.5em;
     position: relative;
     bottom: 10em;
@@ -181,6 +183,8 @@ body {
     border-radius: 1em;
     padding: 0.3em;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
     font-size: 1.5em;
     position: relative;
     bottom: 7em;
@@ -219,7 +223,7 @@ body {
 
 .exclusion {
     color: white;
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 0.3em;
     font-size: 1.5em;
     font-weight: 50;
@@ -228,7 +232,7 @@ body {
 
 .trabajo {
     color: white;
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 0.3em;
     font-size: 2em;
     font-weight: bold;
@@ -246,10 +250,69 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
 }
 
 .oportunidad:hover {
     transform: scale(1.1); /* Cambia el tamaño al 110% */
 }
 
+.leo_concejo {
+    max-width: 120em;
+    padding: 1em;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: 4em;
+    
+    
+}
 
+.coherencia {
+    color: white;
+    position: relative;
+    left: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.3em;
+    font-size: 1.5em;
+    font-weight: 50;
+
+}
+
+.bandera {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.3em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.honestidad {
+    width: 9em;
+    color: #607a9d;
+    background-color: #eaddcc;
+    margin-bottom: 0.3em;
+    font-size: 1em;
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+    border-radius: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 3em;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+    
+}
+
+.honestidad:hover {
+    transform: scale(1.1); /* Cambia el tamaño al 110% */
+}
+
+.celeste1 {
+    background-image:linear-gradient(to right, #1b71aa, #1b71aa,  #2796b4, #299bb6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
