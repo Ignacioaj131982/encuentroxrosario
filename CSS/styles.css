@@ -20,8 +20,8 @@ body {
     position: absolute;
     background-color: transparent;
     padding: 1em;
-    bottom: 64.5vh;
-    right: 56.5vh;
+    bottom: 25em;
+    right: 11em;
     
     transition: 1s;
 }
@@ -50,7 +50,7 @@ body {
         list-style: none;
     
         
-        font-size: 1.3em;
+        font-size: 1em;
         
         
     }
@@ -70,7 +70,7 @@ body {
         background-color: #f4f4f4;
         background: linear-gradient(to right, #f4f4f4, #dedede );
         color: #299bb6;
-        font-size: 1.3em;
+        font-size: 1.1em;
         
         
     }
@@ -153,8 +153,8 @@ body {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
     font-size: 1.5em;
     position: relative;
-    bottom: 10em;
-    left: 5em;
+    top: 6em;
+    left: 5.6em;
     transition: all 1s ease; 
     background-color: #299bb6;
     cursor: pointer;  
@@ -187,8 +187,8 @@ body {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
     font-size: 1.5em;
     position: relative;
-    bottom: 7em;
-    left: 2em;
+    top: 10em;
+    right: 1em;
     transition: all 1s ease; 
     background-color: #299bb6;
     cursor: pointer;  
