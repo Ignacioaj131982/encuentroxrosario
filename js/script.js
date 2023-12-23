@@ -5,3 +5,6 @@ function activarAnimacion() {
     elemento2.classList.toggle('animado');
 }
 
+
+
+
