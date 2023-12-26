@@ -401,9 +401,9 @@ body {
 .formacion {
     width: 8.5em;
     color: #89cca1;
-    background-color: #1a1a1a;
+    background-color: none;
     margin-bottom: 0.3em;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     align-items: center;
     align-content: center;
@@ -440,7 +440,6 @@ body {
 
 .novedades {
     width: 95%;
-    
     position: relative;
     text-align: justify;
     overflow: hidden;
@@ -475,7 +474,7 @@ body {
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
-    height: 30em;
+    height: 25em;
     width: 100%;
     overflow: hidden;
 
@@ -494,12 +493,41 @@ body {
 .monumento {
     height: 15em;
     width: 100%;
+    opacity: 0.5;
+    border-radius: 2em;
+    transform: scale(0.8);
+    transition: .7s ease-in-out all;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
     
+    
+}
+
+.monumento.visible {
+    opacity: 1;
+    transform: scale(0.9);
+    
+
 }
 
 .leo_manifestacion {
     height: 15em;
-    width: 100%;
+    width: 95%;
+    opacity: 0.5;
+    border-radius: 2em;
+    transform: scale(0.9);
+    transition: .7s ease-in-out all;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    position: relative;
+    left: 0.5em;
+
+}
+
+
+
+.leo_manifestacion.visible {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+
 }
 
 
@@ -509,27 +537,14 @@ body {
 }
 
 
-@keyframes showMonumento {
-    from {
-        opacity: 0;
-        transform: scale(0.25);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+
 
 .container1 {
     height: 2000px; /* Altura suficiente para permitir el scroll */
     background-color: #f0f0f0;
 }
 
-.monumental {
-    height: 50%;
-    width: 50%; 
-    
-}
+
 
 .content {
     width: 100px;
