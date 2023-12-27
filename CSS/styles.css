@@ -44,9 +44,6 @@ body {
         display: flex;
         background-color: #f4f4f4;
         background: linear-gradient(to right, #f4f4f4, #dedede );
-        
-        
-        
         list-style: none;
     
         
@@ -66,20 +63,59 @@ body {
 
     .icono_compartir {
         display: flex;
-        padding: 1em;
+        padding: 0.8em;
         background-color: #f4f4f4;
         background: linear-gradient(to right, #f4f4f4, #dedede );
         color: #299bb6;
         font-size: 1.1em;
+        justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
         
         
     }
 
+    .icono_compartir a {
+        margin: 0 auto; /* Ajusta el espaciado entre los íconos */
+    }
+
     .icono_compartir i {
+        font-size: 1em; /* Tamaño de los íconos */
+        color: #299bb6;
+    }
+
+    .icons:hover {
+        transform: scale(1.1);
+        transition: all 1s ease;
+    }
+    
+    #gmail:hover {
+    color: #db4a39;
+    transform: scale(1.5);
+    }
+
+    #WhatsApp, #facebook, #twitter, #instagram, #gmail {
+        transition: all 1s ease-in-out; /* Define la transición en el estado normal */
+    }
+    
+    #WhatsApp:hover {
+        color: #25D366;
+        transform: scale(1.5);
         
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
+    }
+    
+    #facebook:hover {
+        color: #3b5998;
+        transform: scale(1.5);
+    }
+    
+    #instagram:hover {
+        color: #405DE6;
+        transform: scale(1.5);
+    }
+
+    #twitter:hover {
+        color: #1DA1F2;
+        transform: scale(1.5);
 
     }
 
@@ -157,10 +193,24 @@ body {
     left: 3em;
     transition: all 1s ease; 
     background-color: #299bb6;
-    cursor: pointer;  
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
 
 
 }
+
+.encontrarnos p, .barrioxbarrio p {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.encontrarnos i, .barrioxbarrio i {
+    margin-left: 0.5em; /* Espacio entre el texto y el ícono */
+}
+
+
+
 
 .encontrarnos.animado {
     animation-name: mianimacion;
@@ -401,6 +451,7 @@ body {
 .formacion {
     width: 8.5em;
     color: #89cca1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     background-color: none;
     margin-bottom: 0.3em;
     font-size: 1.5em;
@@ -413,7 +464,7 @@ body {
     transition: transform 0.3s ease;
     position: relative;
     left: 0.5em;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+    
     
 }
 
@@ -432,7 +483,7 @@ body {
         background-color:#f5f5f5;
         background: linear-gradient(to right, #f4f4f4, #dedede );
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
-        border: 2px solid black;
+        
         
         
 
@@ -455,12 +506,11 @@ body {
 }
 
 .encuentroxrosario {
-    width: 13em;
+    width: 14em;
     font-size: 1.4em;
     color: #299bb6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    align-items: center;
-    text-align: center;
+    margin: 0 auto;
     
 }
 
@@ -553,5 +603,143 @@ body {
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
+.parte {
+    height: 15em;
+    width: 90%;
+    opacity: 1;
+    border-radius: 2em;
+    margin-top: 2em;
+    position: relative;
+    left: 1em;
+    
+    
+    
+}
+
+.participar {
+    width: 95%;
+    position: relative;
+    text-align: justify;
+    bottom: 2em;
+    
+    
+}
+
+#fondo6 {
+    width: 100%;
+        height: 80vh;
+        background-color:#f5f5f5;
+        background: linear-gradient(to right, #f4f4f4, #dedede );
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        
+        
+        
+        
+
+}
+
+.participar1 {
+    width: 12.5em;
+    background-color: #55ACEE;
+    color: #226699;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: none;
+    top: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    
+    border-radius: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    margin: 0 auto; /* Centrado horizontal */
+    
+    
+    
+}
+
+.participar1:hover {
+    transform: scale(1.1); /* Cambia el tamaño al 110% */
+}
 
 
+footer {
+    height: 60vh;
+    width: 100%;
+    background-color:#beb4b4;
+    background: linear-gradient(to right, #f3eeee, #b8b2b2 );
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo1 {
+    max-width: 100%;
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    order: 1;
+    
+
+}
+
+.logo1 img {
+    max-width: 12em;
+    border-radius: 1em;
+    padding: 0.3em;
+    background-color: transparent;
+
+    
+    }
+
+    .icono_compartir1 {
+        display: flex;
+        padding: 1em;
+        background-color:transparent;
+        color: #299bb6;
+        font-size: 1.5em;
+        order: 2;
+    }
+
+    .icono_compartir1 i {
+        margin: 0.3em;
+    }
+
+    .info_legal {
+        display: flex;
+        list-style-type: none;
+        gap: 1em;
+        text-align: center;
+        justify-content: center ;
+        align-items: center;
+        order: 4;
+        top: 72%;
+        position: relative;
+        }
+    
+    .info_legal li a {
+        position: relative;
+        font-size: .6rem;
+        color: #299bb6;
+        bottom: 2rem;
+        
+    }
+
+    .foot_text {
+        position: relative;
+        order: 3; /* Se muestra tercero */
+        margin: 0 auto; /* Centrado horizontal */
+        top: 62%;
+        color: #299bb6;
+        font-size: 0.9em;
+
+        
+    }
