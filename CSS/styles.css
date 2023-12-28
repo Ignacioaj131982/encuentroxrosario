@@ -177,6 +177,9 @@ body {
         background-image: url('../img/IMG-20231207-WA0044.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        margin: 0 auto;
+        
+    
 
 }
 
@@ -295,31 +298,70 @@ body {
 }
 
 .oportunidad {
+    display: inline-flex;
+    width: 95%;
+    height: 2.5em;
+    
+    background: #374cb0;
     color: white;
-    background-color: #030b9d;
-    margin-bottom: 0.3em;
     font-size: 1em;
-    font-weight: bold;
     align-items: center;
-    align-content: center;
-    border-radius: 1em;
-    padding: 10px 20px;
+    justify-content: center;
+    border: none;
     cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 1em;
+    position: relative;
+    overflow: hidden;
+
+    
+    margin-bottom: 0.3em;
+    
+    font-weight: bold;
+    
+    
+    padding: 10px 20px;
+        
     transition: transform 0.3s ease;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
 }
 
-.oportunidad:hover {
-    transform: scale(1.1); /* Cambia el tamaño al 110% */
+.oportunidad:hover::after {
+    top: 0; 
+}
+
+
+.oportunidad span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.oportunidad::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #030b9d;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
 }
 
 .leo_concejo {
     max-width: 120em;
     padding: 1em;
-    align-items: center;
-    align-content: center;
+    margin: 0 auto;
     position: relative;
-    top: 4em;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a column para colocar los elementos uno debajo del otro */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    
+    top: 20%;
     
     
 }
@@ -327,7 +369,7 @@ body {
 .coherencia {
     color: white;
     position: relative;
-    left: 1.5em;
+    
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 0.3em;
     font-size: 1.5em;
@@ -347,18 +389,18 @@ body {
     width: 9em;
     color: #607a9d;
     background-color: #eaddcc;
-    margin-bottom: 0.3em;
+    
     font-size: 1em;
     font-weight: bold;
-    align-items: center;
-    align-content: center;
+    margin: 0 auto;
     border-radius: 1em;
     padding: 10px 20px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    position: relative;
-    left: 3em;
+    
+    border: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     
 }
 
@@ -385,38 +427,70 @@ body {
 .produccion  {
     color: white;
     position: relative;
-    left: 1.5em;
+    text-align: center;
+    
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    margin-bottom: 0.3em;
+    
     font-size: 1.5em;
     font-weight: 50;
+    margin: 0 auto;
 }
 
 .autogestion {
     color: white;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 0.3em;
     font-size: 2em;
     font-weight: bold;
+    margin: 0 auto;
 }
 
 .frutosDelTerritorio {
-    width: 9em;
+    width: 16em;
     color: #cda560;
     background-color: #808a56;
     margin-bottom: 0.3em;
     font-size: 1em;
     font-weight: bold;
-    align-items: center;
-    align-content: center;
+    text-align: center;
     border-radius: 1em;
     padding: 10px 20px;
     cursor: pointer;
     transition: transform 0.3s ease;
     position: relative;
-    left: 3em;
+    overflow: hidden;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+    border: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    margin-top: 1em;
     
+    
+}
+
+.frutosDelTerritorio::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .4s ease-in-out all;
+    border-radius: 100px;
+    transform-origin: center;
+}
+
+.frutosDelTerritorio:hover::after {
+    transform: scale(400);
+    background: #b66725;
+}
+
+.frutosDelTerritorio span {
+    position: relative;
+    z-index: 2;
 }
 
 .frutos_territorio {
@@ -431,9 +505,7 @@ body {
     
 }
 
-.frutosDelTerritorio:hover {
-    transform: scale(1.1); /* Cambia el tamaño al 110% */
-}
+
 
 #fondo4 {
     width: 100%;
@@ -460,6 +532,7 @@ body {
     cursor: pointer;
     border: none;
     padding: 0.3em;
+    transition: transform 0.3s ease;
 
 
     
@@ -486,6 +559,11 @@ body {
     transition: 6s ease all;
     ;
 }
+
+.formacion:hover {
+    transform: scale(1.1); /* Cambia el tamaño al 110% */
+}
+
 
 .formacion:hover rect {
     stroke-dashoffset: 0;
@@ -670,9 +748,9 @@ body {
 }
 
 .participar1 {
-    width: 12.5em;
+    width: 13.5em;
     background-color: #55ACEE;
-    color: #226699;
+    color: #dedede;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
     top: 2em;
@@ -684,6 +762,8 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease;
     position: relative;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
+    overflow: hidden
     
     
     
@@ -691,8 +771,31 @@ body {
     
 }
 
-.participar1:hover {
-    transform: scale(1.1); /* Cambia el tamaño al 110% */
+.participar1::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    
+    position: absolute;
+    z-index: 1;
+    top: -1.2em;
+    left: calc(-100% - 40px);
+    
+    border-bottom: 40px solid #226699;
+    border-right: 40px solid transparent;
+    transition: .4s ease-in-out all ;
+
+
+
+}
+
+.participar1:hover::after {
+    left: 0;
+}
+
+.participar1 span {
+    position: relative;
+    z-index: 2;
 }
 
 
