@@ -42,13 +42,13 @@ body {
 
 .nav_list {
     width: 100%;
-    height: 80px;
-    background: #f4f4f4;
+    height: 100%;
+    background: linear-gradient(to right, #f4f4f4, #dedede );
     position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
-    border-radius: 10px;
+    
 
 }
 
@@ -84,14 +84,14 @@ body {
 }
 
 .nav_list ul li a .icon {
-   position: relative;
-   display: block;
-   line-height: 75px;
-   font-size: 1.5em;
-   text-align: center;
-   transition: 0.5s;
-   color: #299bb6;
-   
+position: relative;
+display: block;
+line-height: 75px;
+font-size: 1.5em;
+text-align: center;
+transition: 0.5s;
+color: #299bb6;
+
 
 }
 
@@ -107,7 +107,7 @@ body {
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
 
 }
 
@@ -122,157 +122,15 @@ body {
 
 
 
-/*
-    .nav_list ul {
-        display: flex;
-        background-color: #f4f4f4;
-        background: linear-gradient(to right, #f4f4f4, #dedede );
-        list-style: none;
-    
-        
-        font-size: 1em;
-        
-        
-    }
 
-    .nav_list ul li {
-        align-items: center;
-        margin: 0 auto;
-        text-align: center;
-        
-    }
-    
-    .nav_list ul li a .icon {
-        transition: 0.5s ease-in-out all;
-    }
-
-    .nav_list ul li.active a .icon {
-        transform: translateY(-32px);
-    }
-
-    .nav_list ul li a .text {
-        position: absolute;
-        font-weight: 400;
-        
-        letter-spacing: 0.05em;
-        transition: 0.5s ease-in-out all;
-        opacity: 0;
-        transform: translatey(20px);
-    }
-
-    .nav_list ul li.active a .text {
-        opacity: 1;
-        transform: translateY(8px);
-
-    }
-
-     .indicator {
-        position: absolute;
-        top: 5%;
-        width: 70px;
-        height: 70px;
-        background: #29fd53;
-        border-radius: 50%;
-        border: 6px solid ;
-        transition: 0.5s;
-
-    }
-
-    .indicator::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: -22px;
-        width: 20px;
-        height: 20px;
-        background: transparent;
-        border-top-right-radius: 20px;
-        box-shadow: 0px -10px 0 0 var(--clr);
-    }
-
-    .indicator {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: #29fd53;
-    top: -19%;
-    left: 5.3em;
-    border-radius: 50%;
-    border: 6px solid #f4f4f4;
-    transition: 0.5s;
-
-
-}
-
-.indicator::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    background: #f4f4f4;
-    left: -22px;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 #f4f4f4;
-
-
-}
-
-.indicator::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    right: -22px;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 #f4f4f4;
-
-
-}
-
-.nav_list ul li:nth-child(1).active ~ .indicator {
-    transform: translateX(calc(70px * 0));
-}
-
-.nav_list ul li:nth-child(2).active ~ .indicator {
-    transform: translateX(calc(70px * 1));
-}
-
-.nav_list ul li:nth-child(3).active ~ .indicator {
-    transform: translateX(calc(70px * 2));
-}
-
-.nav_list ul li:nth-child(4).active ~ .indicator {
-    transform: translateX(calc(70px * 3));
-}
-
-
-
-    */
-
-    :root {
-        --clr: #111111;
-    }
 
     
-
     
-
-    
-
-    
-
-   
-    
-
 
     .icono_compartir {
         display: flex;
         padding: 0.8em;
-        background-color: #f4f4f4;
-        /*background: linear-gradient(to right, #f4f4f4, #dedede );*/
+        background: linear-gradient(to right, #f4f4f4, #dedede );
         color: #299bb6;
         font-size: 1.1em;
         justify-content: center; /* Centra los elementos horizontalmente */
@@ -337,7 +195,7 @@ body {
     .flex-center {
         display: flex;
         justify-content: center;
-        align-items: center;
+        
         background-size: auto;
         background-position: center;
         
@@ -365,7 +223,7 @@ body {
         background-image: url('../IMG-20230910-WA0563.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        
         
     }
 
@@ -377,14 +235,17 @@ body {
         background-size: cover;
         
         
+        
+        
     }
 
 #fondo2 {
     width: 100%;
         height: 70vh;
-        background-image: url('../img/IMG-20231207-WA0044.jpg');
+        background-image: url('../img/IMG-20231207-WA0044\ \(1\).jpg');
         background-repeat: no-repeat;
-        background-size: cover;
+    background-size: cover;
+    background-position: center;
         margin: 0 auto;
         
     
@@ -400,13 +261,14 @@ body {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
     font-size: 1.5em;
     position: relative;
-    top: 6em;
+    top: 80%;
     left: 3em;
     transition: all 1s ease; 
     background-color: #299bb6;
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    height: 7%;
 
 
 }
@@ -431,9 +293,9 @@ body {
 }
 
 @keyframes mianimacion {
-    0% {background-color: #299bb6; top: 6em; left: 3em; }
-    25% {background-color: #2287b1; top: 10em; left: 2em;}
-    50% {background-color: #1b71aa; bottom: 7.5em; left: 6em;}
+    0% {background-color: #299bb6; top: 80%; left: 3em; }
+    25% {background-color: #2287b1; top: 70%; left: 2em;}
+    50% {background-color: #1b71aa; bottom: 50%; left: 6em;}
     75% {background-color: #2287b1; bottom: 11em; left: 2em;}
     100% {background-color: #299bb6; bottom: 10em; left: 5em;}
 
@@ -448,11 +310,12 @@ body {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
     font-size: 1.5em;
     position: relative;
-    top: 10em;
+    top: 90%;
     right: 3.5em;
     transition: all 1s ease; 
     background-color: #299bb6;
-    cursor: pointer;  
+    cursor: pointer;
+    height: 7%;  
 }
 
 .barrioxbarrio.animado {
@@ -463,11 +326,11 @@ body {
 }
 
 @keyframes mianimacion1 {
-    0% {background-color: #299bb6; top: 10em; right: 3.5em; }
-    25% {background-color: #2287b1; top: 11em; right: 3em;}
-    50% {background-color: #1b71aa; top: 11em; right: 6.5em;}
-    75% {background-color: #2287b1; top: 11em; right: 2em;}
-    100% {background-color: #299bb6; top: 9em; right: 1em;}
+    0% {background-color: #299bb6; top: 90%; right: 3.5em; }
+    25% {background-color: #2287b1; top: 80%; right: 3em;}
+    50% {background-color: #1b71aa; top: 70%; right: 6.5em;}
+    75% {background-color: #2287b1; top: 65%; right: 2em;}
+    100% {background-color: #299bb6; top: 90%; right: 1em;}
     
 
 }
@@ -625,7 +488,7 @@ body {
 
 #fondo3 {
     width: 100%;
-        height: 80vh;
+        height: 60vh;
         background-image: url('../img/frutosterritorio2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -707,7 +570,7 @@ body {
     align-items: center;
     align-content: center;
     position: relative;
-    top: 4em;
+    top: 50%;
     
     
     
@@ -784,7 +647,7 @@ body {
 
 #fondo5 {
     width: 100%;
-        height: 170vh;
+        height: 175vh;
         background-color:#f5f5f5;
         background: linear-gradient(to right, #f4f4f4, #dedede );
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
@@ -799,6 +662,7 @@ body {
     position: relative;
     text-align: justify;
     overflow: hidden;
+    top: 2%;
     
     
 }
@@ -890,12 +754,14 @@ body {
     color: #299bb6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: justify;
+    padding: 0.2em;
 }
 
 .cuerpo1 {
     color: #299bb6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
+    padding: 0.2em;
 }
 
 
@@ -1097,3 +963,226 @@ footer {
 
         
     }
+
+    /* Media query para pantallas más grandes, como tablets y desktop */
+@media (min-width: 556px) {
+    #fondo2 {
+        background-image: url('../img/IMG-20231207-WA0044\ \(4\).jpg');
+    background-position: center;
+    background-size: cover;
+    
+    }
+
+    .leo_concejo {
+        max-width: 120em;
+        padding: 1em;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a column para colocar los elementos uno debajo del otro */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+        
+        top: 35%;
+        
+        
+    }
+
+   
+
+    #fondo3 {
+        width: 100%;
+            height: 80vh;
+            background-image: url('../img/frutosterritorio2\(1\).jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+    }
+    
+}
+
+@media (min-width: 714px) {
+    #fondo2 {
+        background-image: url('../img/IMG-20231207-WA0044\ \(5\).jpg');
+    background-position: center;
+    background-size: cover;
+    
+    }
+    #fondo3 {
+        width: 100%;
+            height: 90vh;
+            background-image: url('../img/frutosterritorio2\(2\).jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+    }
+
+    .monumento {
+        height: 20em;
+        width: 100%;
+        opacity: 0.5;
+        border-radius: 2em;
+        transform: scale(0.8);
+        transition: .7s ease-in-out all;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        
+        
+    }
+
+    .leo_manifestacion {
+        height: 20em;
+        width: 95%;
+        opacity: 0.5;
+        border-radius: 2em;
+        transform: scale(0.9);
+        transition: .7s ease-in-out all;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        position: relative;
+        left: 0.5em;
+    
+    }
+    .novedades {
+        width: 95%;
+        position: relative;
+        text-align: justify;
+        overflow: hidden;
+        
+        
+        
+    }
+
+    #fondo5 {
+        width: 100%;
+            height: 170vh;
+    }
+    
+}
+
+@media (min-width: 930px) {
+
+    #fondo1 {
+        width: 100%;
+        height: 70vh;
+        background-image: url('../img/carpinteria3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+        
+        
+    }
+    #fondo2 {
+        background-image: url('../img/IMG-20231207-WA0044\ \(6\).jpg');
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    
+    }
+
+    .leo_concejo {
+        max-width: 120em;
+        padding: 1em;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a column para colocar los elementos uno debajo del otro */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+        left: 30%;
+        top: 30%;
+        
+        
+    }
+    #fondo3 {
+        width: 100%;
+            height: 115vh;
+            background-image: url('../img/frutosterritorio2\(3\).jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+    }
+
+    .frutos_territorio {
+        max-width: 120em;
+        padding: 1em;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        top: 70%;
+        
+        
+        
+    }
+
+    .monumento {
+        height: 35em;
+        width: 100%;
+        opacity: 0.5;
+        border-radius: 2em;
+        transform: scale(0.8);
+        transition: .7s ease-in-out all;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        
+        
+    }
+
+    .leo_manifestacion {
+        height: 30em;
+        width: 95%;
+        opacity: 0.5;
+        border-radius: 2em;
+        transform: scale(0.9);
+        transition: .7s ease-in-out all;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        position: relative;
+        left: 0.5em;
+    
+    }
+    .novedades {
+        width: 95%;
+        position: relative;
+        text-align: justify;
+        overflow: hidden;
+        top: 2%;
+        
+        
+    }
+
+    #fondo5 {
+        width: 100%;
+            height: 230vh;
+    }
+
+    .cuerpo {
+        color: #299bb6;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        text-align: justify;
+        
+    }
+    
+    .cuerpo1 {
+        color: #299bb6;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        
+    }
+
+    .nueva {
+        max-width: 17em;
+        padding: 1em;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        top: 25%;
+        
+        
+    }
+
+
+    
+    
+    
+}
+
+
+    

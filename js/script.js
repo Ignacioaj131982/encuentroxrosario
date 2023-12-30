@@ -43,7 +43,7 @@ item.addEventListener('click', activeLink));
 
 
 
-
+/*
 const abrirIcono = document.getElementById("abrirIcono");
 const mostrarTexto = document.getElementById("mostrarTexto");
 
@@ -51,7 +51,21 @@ abrirIcono.addEventListener("click", (event) => {
     event.preventDefault(); // Evitar la acción predeterminada del enlace
     const textoGaleria = document.querySelector('.link_text').textContent;
     mostrarTexto.textContent = textoGaleria;
+});*/
+
+// Seleccionar todos los elementos con la clase 'abrirIcono'
+const iconos = document.querySelectorAll('.abrirIcono');
+
+// Agregar un evento de clic a cada icono
+iconos.forEach((icono) => {
+    icono.addEventListener("click", (event) => {
+        event.preventDefault(); // Evitar la acción predeterminada del enlace
+        const texto = icono.nextElementSibling.querySelector('.link_text').textContent;
+        console.log("Se hizo clic en el ícono:", texto);
+        // Aquí puedes realizar las acciones deseadas para cada ícono
+    });
 });
+
 
 
 
