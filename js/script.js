@@ -43,15 +43,7 @@ item.addEventListener('click', activeLink));
 
 
 
-/*
-const abrirIcono = document.getElementById("abrirIcono");
-const mostrarTexto = document.getElementById("mostrarTexto");
 
-abrirIcono.addEventListener("click", (event) => {
-    event.preventDefault(); // Evitar la acción predeterminada del enlace
-    const textoGaleria = document.querySelector('.link_text').textContent;
-    mostrarTexto.textContent = textoGaleria;
-});*/
 
 // Seleccionar todos los elementos con la clase 'abrirIcono'
 const iconos = document.querySelectorAll('.abrirIcono');
@@ -65,6 +57,19 @@ iconos.forEach((icono) => {
         // Aquí puedes realizar las acciones deseadas para cada ícono
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
