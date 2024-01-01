@@ -30,7 +30,7 @@ const observador = new IntersectionObserver(cargarImagen, {
 observador.observe(imagen1);
 observador.observe(imagen2);
 
-const list = document.querySelectorAll('.list');
+/*const list = document.querySelectorAll('.list');
 function activeLink() {
     list.forEach((item) =>
     item.classList.remove('active'));
@@ -56,7 +56,40 @@ iconos.forEach((icono) => {
         console.log("Se hizo clic en el ícono:", texto);
         // Aquí puedes realizar las acciones deseadas para cada ícono
     });
+});*/
+
+const list = document.querySelectorAll('.list');
+
+function activeLink() {
+    list.forEach((item) => item.classList.remove('active'));
+    this.classList.add('active');
+}
+
+list.forEach((item) => item.addEventListener('click', activeLink));
+
+// Seleccionar todos los elementos con la clase 'abrirIcono'
+const iconos = document.querySelectorAll('.abrirIcono');
+
+// Agregar un evento de clic a cada icono
+iconos.forEach((icono) => {
+    icono.addEventListener("click", (event) => {
+        event.preventDefault(); // Evitar la acción predeterminada del enlace
+
+        // Verificar si se hizo clic en el icono Home
+        if (icono.querySelector('.bx-home')) {
+            list.forEach((item) => item.classList.remove('active')); // Remover 'active' de todos los elementos de lista
+            icono.closest('.list').classList.add('active'); // Agregar 'active' al elemento padre del icono Home
+        }
+
+        const texto = icono.nextElementSibling.querySelector('.link_text').textContent;
+        console.log("Se hizo clic en el ícono:", texto);
+        // Aquí puedes realizar las acciones deseadas para cada ícono
+    });
 });
+
+
+
+
 
 
 
