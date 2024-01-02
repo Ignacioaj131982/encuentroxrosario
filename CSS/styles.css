@@ -741,6 +741,9 @@ color: #299bb6;
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
         
         
+       
+        
+        
         
 
 }
@@ -893,9 +896,8 @@ color: #299bb6;
 }
 
 .flex-center1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: wrap;
+    
     margin: 0 auto;
 }
 
@@ -1071,7 +1073,7 @@ footer {
         justify-content: center; /* Centra horizontalmente los elementos */
         align-items: center; /* Centra verticalmente los elementos */
         
-        top: 35%;
+        top: 25%;
         
         
     }
@@ -1164,7 +1166,9 @@ footer {
 
     #fondo5 {
         width: 100%;
-            height: 190vh;
+        
+        
+            
     }
 
     .icono_compartir i {
@@ -1271,7 +1275,7 @@ footer {
     #fondo3 {
         width: 100%;
             height: 115vh;
-            background-image: url('../img/frutosterritorio2\(3\).jpg');
+            
             background-repeat: no-repeat;
             background-size: cover;
     
@@ -1387,3 +1391,118 @@ footer {
     
     
 }
+
+@media screen and (min-width: 667px)  and (orientation: landscape) {
+
+    #fondo {
+        position: relative;
+        width: 100%;
+        height: 150vh;
+        overflow: hidden;
+    }
+
+    .barrioxbarrio {
+        display: flex;
+        height: 1.5em;
+        
+    }
+
+    .encontrarnos {
+        height: 1.5em;
+
+
+    }
+
+    #fondo1 {
+        width: 100%;
+        height: 80vh;
+    }
+
+    #fondo2 {
+        width: 100%;
+        height: 30em;
+    }
+
+    #fondo3 {
+        width: 100%;
+        height: 30em;
+        background-image: url('../img/frutosterritorio2landscape.jpg');
+    }
+
+    #fondo4 {
+        
+            height: 20em;
+            
+    
+    }
+
+    #fondo5 {
+        height: 55em;
+        
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        display: flex;
+        height: 30em;
+        width: 100%;
+        align-content: center;
+        align-items: center;
+        top: 20%
+        
+    
+    }
+    
+    .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #fondo6 {
+        width: 100%;
+            height: 35em;
+            display: flex;
+            
+    }
+
+    footer {
+        height: 30em;
+        width: 100%;
+        
+    }
+
+    .cuerpo1 {
+        
+        text-align: center;
+        
+    }
+
+    .frutos_territorio {
+        
+        top: 60%;
+        
+        
+        
+    }
+
+    
+    
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 714px)  and (orientation: landscape) {
+    #fondo5 {
+        height: 75em;
+        
+    }
+}
+
