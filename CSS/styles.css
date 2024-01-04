@@ -858,6 +858,7 @@ color: #299bb6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 0.2em;
+    margin: 1.5em;
 }
 
 
@@ -908,7 +909,7 @@ color: #299bb6;
 
 #fondo6 {
     width: 100%;
-        height: 40em;
+        height: 35em;
         background-color:#f5f5f5;
         background: linear-gradient(to right, #f4f4f4, #dedede );
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
@@ -1169,12 +1170,7 @@ footer {
         
     }
 
-    #fondo5 {
-        width: 100%;
-        
-        
-            
-    }
+    
 
     .icono_compartir i {
         font-size: 2em; 
@@ -1232,12 +1228,17 @@ footer {
 
     .cuerpo, .cuerpo1 {
     
-        text-align: justify;
+        text-align: center;
         width: 90%;
         margin: 1.5em;
         
     }
 
+    #fondo5 {
+        height: 75em;
+    }
+
+    
 
     
 }
@@ -1246,7 +1247,7 @@ footer {
 
     #fondo1 {
         width: 100%;
-        height: 50vh;
+        height: 25em;
         background-image: url('../img/carpinteria3.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -1260,7 +1261,7 @@ footer {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 50em;
+    height: 35em;
     
     }
 
@@ -1280,8 +1281,8 @@ footer {
     }
     #fondo3 {
         width: 100%;
-            height: 115vh;
-            
+            height: 30em;
+            background-image: url(../img/frutosterritorio2\(2\).jpg);
             background-repeat: no-repeat;
             background-size: cover;
     
@@ -1293,7 +1294,7 @@ footer {
         align-items: center;
         align-content: center;
         position: relative;
-        top: 70%;
+        
         
         
         
@@ -1329,7 +1330,7 @@ footer {
     .novedades {
         width: 100%;
         position: relative;
-        
+        height: 70em;
         overflow: hidden;
         top: 2%;
         display: flex;
@@ -1342,7 +1343,7 @@ footer {
 
     #fondo5 {
         width: 100%;
-            height: 190vh;
+            height: 70em;
     }
 
     .cuerpo {
@@ -1358,6 +1359,8 @@ footer {
         color: #299bb6;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         text-align: center;
+        margin: 1.5em;
+        
         
     }
 
@@ -1373,7 +1376,7 @@ footer {
     }
 
     .nav_list {
-        height: 18vh;
+        height: 4.5em;
         width: 100%;
     }
 
@@ -1395,6 +1398,8 @@ footer {
         width: 700px;
     }
 
+   
+    
     
 
     
@@ -1402,7 +1407,7 @@ footer {
     
 }
 
-@media screen and (min-width: 667px)  and (orientation: landscape) {
+@media screen and (min-width: 667px)  and (max-width:714px) and (orientation: landscape) {
 
 
 
@@ -1450,18 +1455,22 @@ footer {
 
     #fondo5 {
         height: 55em;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
         
     }
 
     .embed-container {
         position: relative;
-        padding-bottom: 56.25%;
+        
         display: flex;
         height: 30em;
         width: 100%;
         align-content: center;
         align-items: center;
-        top: 20%
+        
         
     
     }
@@ -1470,8 +1479,9 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 50%;
+        
     }
     
     #fondo6 {
@@ -1490,7 +1500,8 @@ footer {
     .cuerpo1 {
         
         text-align: center;
-        
+        margin: 1.5em;
+    
     }
 
     .frutos_territorio {
@@ -1515,20 +1526,61 @@ footer {
 
 }
 
-@media screen and (min-width: 714px) and (max-width:929) and (orientation: landscape) {
+@media screen and (min-width: 714px) and (max-width:1400px) and (orientation: landscape) {
+    
+    #fondo {
+        height: 150vh;
+    }
+
+    #fondo1 {
+        width: 100%;
+        height: 25em;
+    }
+
+    #fondo2 {
+        width: 100%;
+        height: 35em;
+    }
+
+    
+    
     #fondo5 {
         height: 75em;
+        width: 100%;
         
     }
-    .nav_list ul li a .icon {
-        bottom: 1em;
-    }
+    
 
     .nav_list ul li.active a .text {
         opacity: 1;
-        transform: translateY(-50px);
+        transform: translateY(-10px);
         pointer-events: auto; 
 
     }
+
+    .novedades {
+        width: 100%;
+        height: 90em;
+
+    }
+
+    footer {
+        width: 100%;
+        height: 25em;
+    }
+
+    .barrioxbarrio {
+        display: flex;
+        height: 1.5em;
+        
+    }
+
+    .encontrarnos {
+        height: 1.5em;
+
+
+    }
+
+
 }
 
