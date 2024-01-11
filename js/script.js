@@ -90,20 +90,33 @@ iconos.forEach((icono) => {
 
 
 
+/*const territorioLink = document.querySelector('.link_text');
+const menuVertical = document.querySelector('.menu_vertical');
+
+territorioLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    menuVertical.classList.toggle('active');
+    console.log('Toggle class "active"');
+});*/
 
 
+const territorioLink = document.querySelector('.link_text');
+const menuVertical = document.querySelector('.menu_vertical');
 
+territorioLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    menuVertical.classList.toggle('active');
+    console.log('Toggle class "active"');
+});
 
+// Cerrar el menú si se hace clic fuera de él
+document.addEventListener('click', function (event) {
+    const isTerritorioLink = event.target === territorioLink || territorioLink.contains(event.target);
+    const isMenuVertical = event.target === menuVertical || menuVertical.contains(event.target);
 
-
-
-
-
-
-
-
-
-
-
-
+    if (!isTerritorioLink && !isMenuVertical) {
+        menuVertical.classList.remove('active');
+        console.log('Close menu');
+    }
+});
 

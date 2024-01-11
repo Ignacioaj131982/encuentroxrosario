@@ -41,6 +41,48 @@ header {
         background: #fff;
     }
 
+    .logo_header {
+        display: flex;
+        width: 7em;
+        height: 7em;
+        position: relative;
+        padding: 0.5px;
+        margin: 0 auto;
+        
+        
+        
+        
+    }
+
+    .logo_header img {
+        width: 5em;
+        height: 5em;
+        
+    
+    
+    border-radius: 10px; /* Tu valor de border-radius aquí */
+}
+
+.encuentro_letras {
+    display: flex;
+    position: relative;
+    left: 5%;
+    width: 20em;
+    height: 5em;
+    margin: 0 auto;
+
+    
+    
+}
+
+.encuentro_letras img {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    
+}
+    
+
 
 
 
@@ -50,31 +92,7 @@ body {
     padding: 0;
 }
 
-.logo {
-    max-width: 100%;
-    display: flex;
-    position: absolute;
-    background-color: transparent;
-    padding: 1em;
-    
-    left: 2%;
-    
-    transition: 1s;
-}
 
-.logo img {
-    max-width: 7em;
-    border-radius: 1em;
-    padding: 0.3em;
-    background-color: transparent;
-
-    
-    }
-
-.logo:hover{
-    
-    transform: scale(1.5);
-}
 
 .sin_hipervinculo {
     
@@ -92,13 +110,15 @@ body {
     justify-content: center;
     align-content: center;
     
+    
 
 }
 
 
 .nav_list ul {
     display: flex;
-    width: 350px;
+    width: 100%;
+    
     
     
 
@@ -152,12 +172,16 @@ color: #299bb6;
     transition: 0.5s;
     position: relative;
     
+    
 
 }
 
 .nav_list ul li.active a .icon {
     transform: translateY(-30px);
 }
+
+
+
 
 
 
@@ -200,6 +224,7 @@ color: #299bb6;
     opacity: 1;
     transform: translateY(10px);
     pointer-events: auto; 
+    font-size: 14px;
     
 
 }
@@ -219,6 +244,34 @@ color: #299bb6;
 }
 
 
+.menu_vertical {
+    position: relative;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    left: -30%;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;  /* Solo anima la opacidad y la visibilidad */
+}
+
+.menu_vertical.active {
+    display: block !important; 
+    opacity: 1;
+    visibility: visible;
+    width: 120px;
+    font-size: 1em;
+}
+
+.menu_vertical li a {
+    
+    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+
+
 
 
 
@@ -235,12 +288,13 @@ color: #299bb6;
 
     .icono_compartir {
         display: flex;
-        padding: 0.8em;
+        padding: 0.5em;
         background: linear-gradient(to right, #f4f4f4, #dedede );
         color: #299bb6;
         font-size: 1.1em;
-        justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+        justify-content: left; /* Centra los elementos horizontalmente */
+        height: 6em;
+    
         
         
     }
@@ -249,47 +303,7 @@ color: #299bb6;
         margin: 0 auto; /* Ajusta el espaciado entre los íconos */
     }
 
-    .icono_compartir i {
-        font-size: 1em; /* Tamaño de los íconos */
-        color: #299bb6;
-    }
-
-    .icons:hover {
-        transform: scale(1.1);
-        transition: all 1s ease;
-    }
     
-    #gmail:hover {
-    color: #db4a39;
-    transform: scale(1.5);
-    }
-
-    #WhatsApp, #facebook, #twitter, #instagram, #gmail {
-        transition: all 1s ease-in-out; /* Define la transición en el estado normal */
-    }
-    
-    #WhatsApp:hover {
-        color: #25D366;
-        transform: scale(1.5);
-        
-    }
-    
-    #facebook:hover {
-        color: #3b5998;
-        transform: scale(1.5);
-    }
-    
-    #instagram:hover {
-        color: #405DE6;
-        transform: scale(1.5);
-    }
-
-    #twitter:hover {
-        color: #1DA1F2;
-        transform: scale(1.5);
-
-    }
-
     
 
     .nav_list li a{
