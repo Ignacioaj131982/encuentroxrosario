@@ -83,7 +83,30 @@
     
 }
 
+.flex-center3 {
+    background: linear-gradient(to right, #918d8d, #dedede );
+    display: flex;
+    
+    flex-direction: column;
+    height: 65em;
+    
+    
+}
+
 .capacitar {
+    position: relative;
+    display: flex;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    justify-content: center;
+    height: 5em;
+    text-align: center;
+    top: 2%;
+    width: 100%;
+}
+
+.solidaridad {
     position: relative;
     display: flex;
     
@@ -107,16 +130,18 @@
 }
 
 .slideshow-container {
-    max-width: 80%;
+    max-width: 70%;
+    
     position: relative;
-    margin: auto;
+    margin: 0 auto;
+    top: 5%;
     
 }
 
 #prev, #next  {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -147,7 +172,7 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 8px;
+    bottom: 15%;
 
 }
 
@@ -168,6 +193,8 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-top: 20%;
+    margin-right: 5%;
 }
 
 .dot.active, .dot:hover {
