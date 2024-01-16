@@ -317,7 +317,7 @@ color: #299bb6;
         flex-direction: column;
         position: relative;
         width: 100%;
-        height: 50em;
+        height: 55em;
         overflow: hidden;
     
         
@@ -746,7 +746,7 @@ color: #299bb6;
 
 #fondo5 {
     width: 100%;
-        height: 75em;
+        height: 110em;
         background-color:#f5f5f5;
         background: linear-gradient(to right, #f4f4f4, #dedede );
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
@@ -764,16 +764,18 @@ color: #299bb6;
     position: relative;
     text-align: justify;
     overflow: hidden;
-    top: 2%;
+    
     
     
 }
 
 .novedades1 {
-    font-size: 1.5em;
+    font-size: 3em;
     color: #299bb6;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+    
 }
 
 .proyectos_productivos {
@@ -794,7 +796,7 @@ color: #299bb6;
     font-size: 1.4em;
     color: #299bb6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
+    margin-left: 10%;
     
 }
 
@@ -865,20 +867,22 @@ color: #299bb6;
 }
 
 
-.cuerpo, .texto_quienes_somos {
+.cuerpo  {
     color: #299bb6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: justify;
-    padding: 0.2em;
+    padding: 2em;
+    
 }
 
-.cuerpo1 {
+.texto_quienes_somos {
     color: #299bb6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 0.2em;
-    margin: 1.5em;
+    text-align: justify;
+    padding: 1em;
+    
 }
+
 
 .ver_mas {
     display: flex;
@@ -968,92 +972,19 @@ color: #299bb6;
     
 }
 
-.participar {
-    width: 95%;
-    position: relative;
-    text-align: center;
-    bottom: 2em;
-    
-    
-}
-
-.flex-center1 {
-    display: wrap;
-    
-    margin: 0 auto;
-}
-
-#fondo6 {
-    width: 100%;
-        height: 35em;
-        background-color:#f5f5f5;
-        background: linear-gradient(to right, #f4f4f4, #dedede );
-        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
-        display: flex;
-    justify-content: center;
-    align-items: center;
-        
-        
-        
-        
-        
-
-}
-
-.participar1 {
-    width: 13.5em;
-    background-color: #55ACEE;
-    color: #dedede;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    top: 2em;
-    font-size: 1em;
-    font-weight: bold;
-    border: none;
-    border-radius: 1em;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    position: relative;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.66);
-    overflow: hidden
-    
-    
-    
-    
-    
-}
-
-.participar1::after {
-    content: "";
-    width: 100%;
-    height: 20px;
-    
-    position: absolute;
-    z-index: 1;
-    top: -1.2em;
-    left: calc(-100% - 40px);
-    
-    border-bottom: 40px solid #226699;
-    border-right: 40px solid transparent;
-    transition: .4s ease-in-out all ;
 
 
 
-}
 
-.participar1:hover::after {
-    left: 0;
-}
 
-.participar1 span {
-    position: relative;
-    z-index: 2;
-}
+
+
+
+
 
 
 footer {
-    height: 60vh;
+    height: 60em;
     width: 100%;
     background-color:#beb4b4;
     background: linear-gradient(to right, #f3eeee, #b8b2b2 );
@@ -1071,7 +1002,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 35%;
+    justify-content: center;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     order: 1;
@@ -1095,6 +1027,8 @@ footer {
         color: #299bb6;
         font-size: 1.5em;
         order: 2;
+        margin-top: 2em;
+        
     }
 
     .icono_compartir1 i {
@@ -1113,7 +1047,7 @@ footer {
         justify-content: center ;
         align-items: center;
         order: 4;
-        top: 72%;
+        top: 85%;
         position: relative;
         }
     
@@ -1121,7 +1055,7 @@ footer {
         position: relative;
         font-size: .6rem;
         color: #299bb6;
-        bottom: 2rem;
+        
         
     }
 
@@ -1129,7 +1063,9 @@ footer {
         position: relative;
         order: 3; /* Se muestra tercero */
         margin: 0 auto; /* Centrado horizontal */
-        top: 62%;
+        top: 85%;
+        
+        text-align: center;
         color: #299bb6;
         font-size: 0.9em;
 
@@ -1309,7 +1245,7 @@ footer {
         pointer-events: none;
     }
 
-    .cuerpo, .cuerpo1 {
+    .cuerpo  {
     
         text-align: center;
         width: 90%;
@@ -1442,15 +1378,7 @@ footer {
         
     }
     
-    .cuerpo1 {
-        color: #299bb6;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        margin: 1.5em;
-        
-        
-    }
-
+    
     .nueva {
         max-width: 17em;
         padding: 1em;
@@ -1566,12 +1494,7 @@ footer {
         
     }
     
-    #fondo6 {
-        width: 100%;
-            height: 35em;
-            display: flex;
-            
-    }
+    
 
     footer {
         height: 30em;
@@ -1579,12 +1502,7 @@ footer {
         
     }
 
-    .cuerpo1 {
-        
-        text-align: center;
-        margin: 1.5em;
     
-    }
 
     .frutos_territorio {
         
