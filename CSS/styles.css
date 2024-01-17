@@ -1,17 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
 * {/* configuracion inicial para que se aplique en general */
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Be Vietnam Pro', 'sans-serif';
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    font-weight: 600;
 }
 
 html {
     scroll-behavior: smooth;
+    
 }
 header {
-    padding: 5px;
+    position: absolute;
+    width: 100%;
     background: linear-gradient(to right, #f4f4f4, #dedede );
+    
 }
 
     .btn-wsp {
@@ -58,8 +66,10 @@ header {
     }
 
     .logo_header img {
-        width: 5em;
+        width: 8em;
         height: 5em;
+        position: relative;
+        bottom: 15%;
         
     
     
@@ -69,10 +79,11 @@ header {
 .encuentro_letras {
     display: flex;
     position: relative;
-    left: 5%;
-    width: 20em;
+    
+    width: 10em;
     height: 5em;
-    margin: 0 auto;
+    
+    bottom: 15%;
 
     
     
@@ -121,6 +132,15 @@ body {
 .nav_list ul {
     display: flex;
     width: 100%;
+    height: 6em;
+    list-style: none;
+    
+    
+    background-color: #299bb6 ;
+    
+    
+
+    
     
     
     
@@ -132,8 +152,8 @@ body {
 .nav_list ul li {
     position: relative;
     list-style: none;
-    width: 70px;
-    height: 70px;
+    width: 15px;
+    height: 60px;
     z-index: 1;
     margin: 0 auto;
 
@@ -146,10 +166,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 10%;
     text-align: center;
-    font-weight: 500;
-    margin: 0 auto;
+    font-weight: bold;
+    
+    
+    
+   
+    
+    
     
     
 
@@ -162,7 +187,10 @@ line-height: 75px;
 font-size: 1.5em;
 text-align: center;
 transition: 0.5s;
-color: #299bb6;
+color: #fff;
+
+
+
 
 
 }
@@ -171,16 +199,18 @@ color: #299bb6;
     line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    color: #299bb6;
+    color: #fff;
     transition: 0.5s;
     position: relative;
+    margin-left: 10px;
     
     
 
 }
 
 .nav_list ul li.active a .icon {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
+    margin-left: 10px;
 }
 
 
@@ -199,7 +229,7 @@ color: #299bb6;
 
 .nav_list ul li a .text {
     position: absolute;
-    color: #299bb6;
+    color: #fff;
     font-weight: 400;
     font-size: 0.75em;
     letter-spacing: 0.05em;
@@ -215,7 +245,7 @@ color: #299bb6;
 .nav_list ul li a .text {
     
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(30px);
     pointer-events: none;
     transition: opacity 0.5s, transform 0.5s; /* Agrega la transición */
 }
@@ -225,12 +255,58 @@ color: #299bb6;
 
 .nav_list ul li.active a .text {
     opacity: 1;
-    transform: translateY(10px);
+    transform: translateY(50%);
     pointer-events: auto; 
     font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    
     
 
 }
+
+.nav_list ul li a .text1 {
+    
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+    transition: opacity 0.5s, transform 0.5s; /* Agrega la transición */
+}
+
+.nav_list ul li.active a .text1 {
+    opacity: 1;
+    transform: translateY(40%);
+    pointer-events: auto; 
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10%;
+    
+}
+
+.nav_list ul li a .text2 {
+    
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+    transition: opacity 0.5s, transform 0.5s; /* Agrega la transición */
+}
+
+.nav_list ul li.active a .text2 {
+    opacity: 1;
+    transform: translateY(-1.7em);
+    pointer-events: auto; 
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15%;
+    
+}
+
+
+
+
+
+
+
 
 .icon-wrapper {
     display: inline-block;
@@ -252,7 +328,7 @@ color: #299bb6;
     display: none;
     list-style: none;
     width: 200px;
-    background-color: rgba(210, 210, 210, 0.5);
+    background-color: rgba(41, 155, 182, 0.8);
     left: -30%;
 
     opacity: 0;
@@ -285,6 +361,8 @@ color: #299bb6;
         font-size: 1.1em;
         justify-content: left; /* Centra los elementos horizontalmente */
         height: 6em;
+        
+        
     
         
         
@@ -299,10 +377,30 @@ color: #299bb6;
 
     .nav_list li a{
         display: flex;
-        margin: 0.3em;
-        color: #000000;
+        margin: 0;
+        color: #fff;
+        
+        
     }
 
+    .nav_list li {
+        margin: 0;
+        
+        
+        
+    }
+
+    .nav_list a {
+    text-decoration: none;
+    
+    margin: 0;
+    border: none;
+    color: #299bb6;
+    }
+
+    
+    
+    
     
 
     
@@ -317,8 +415,11 @@ color: #299bb6;
         flex-direction: column;
         position: relative;
         width: 100%;
-        height: 55em;
+        height: 80em;
         overflow: hidden;
+        
+        
+        
     
         
     }
@@ -335,7 +436,7 @@ color: #299bb6;
     }
 
     .foto_fondo {
-        position: relative;
+    
         
         height: 20em;
         top: 10%;
@@ -355,12 +456,12 @@ color: #299bb6;
         background-position: center;
         animation: zoomIn 5s ease forwards;
         right: 10%;
-        top: 10%;
+        top: 35%;
         
     }
 
     .quienes_somos{
-        top: 2%;
+        top: 85%;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -376,6 +477,16 @@ color: #299bb6;
         
     }
 
+    .Titulo_quienes_somos {
+        font-weight: bold;
+        
+        display: flex;
+        margin: 0 auto;
+        
+        
+        
+    }
+
     .texto_quienes_somos {
         
         position: relative;
@@ -384,7 +495,7 @@ color: #299bb6;
         width: 90%;
         margin: 1em;
         line-height: 1.5em;
-        top: 10%;
+        top: 32%;
     } 
 
     .texto_proyectos_prodcutivos {
@@ -877,7 +988,7 @@ color: #299bb6;
 
 .texto_quienes_somos {
     color: #299bb6;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
     text-align: justify;
     padding: 1em;
     
@@ -889,7 +1000,7 @@ color: #299bb6;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 10%;
+    top: 35%;
     left: 5.5%;
     background-color:#299bb6 ;
     border: none;
@@ -1072,21 +1183,67 @@ footer {
         
     }
 
-    @media (min-width: 404px) and (max-width:556px) {
-        #fondo3 {
-            background-image: url('../img/frutosterritorio2\(2\).jpg');
+    @media (min-width: 458px) and (max-width:552px) {
+        .encuentro_letras {
+            font-size: 1.2em;
+            padding-bottom: 1.5em;
+            margin-bottom: 1em;
+            
+            
+        
+            
+            
         }
+        .encuentro_letras img {
+            width: 95%;
+            height: 100%;
+            align-items: center;
+            
+        }
+
+        
 
     }
 
     /* Media query para pantallas más grandes, como tablets y desktop */
-@media (min-width: 556px) {
-    #fondo2 {
-        background-image: url('../img/IMG-20231207-WA0044\ \(4\).jpg');
-    background-position: center;
-    background-size: cover;
+@media (min-width: 553px) {
+    .encuentro_letras {
+        font-size: 1.2em;
+        padding-bottom: 1.5em;
+        margin-bottom: 1em;
+        position: relative;
+        
+        
     
+        
+        
     }
+
+    .encuentro_letras img {
+        width: 95%;
+        height: 100%;
+        align-items: center;
+        
+    }
+
+    
+
+    .logo_header img {
+        width: 9em;
+        height: 6em;
+        position: relative;
+        bottom: 25%;
+        
+    
+    
+    border-radius: 10px; /* Tu valor de border-radius aquí */
+}
+
+
+    
+
+    
+
 
     .leo_concejo {
         max-width: 120em;
@@ -1105,14 +1262,7 @@ footer {
 
    
 
-    #fondo3 {
-        width: 100%;
-            height: 80vh;
-            background-image: url('../img/frutosterritorio2\(3\).jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
     
-    }
 
     .icono_compartir i {
         font-size: 1.5em; /* Tamaño de los íconos */
@@ -1140,20 +1290,31 @@ footer {
 }
 
 @media (min-width: 714px) and (max-width: 929px) {
-    #fondo2 {
-        background-image: url('../img/IMG-20231207-WA0044\ \(5\).jpg');
-    background-position: center;
-    background-size: cover;
+
     
-    }
-    #fondo3 {
-        width: 100%;
-            height: 90vh;
-            background-image: url('../img/frutosterritorio2\(3\).jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+    .encuentro_letras {
+        font-size: 1.2em;
+        padding-bottom: 1.5em;
+        margin: 0 auto;
+        position: relative;
+        
+        
+        
+        
+        
     
+        
+        
     }
+
+    .encuentro_letras img {
+        width: 95%;
+        height: 100%;
+        align-items: center;
+        
+    }
+
+    
 
     .monumento {
         height: 20em;
