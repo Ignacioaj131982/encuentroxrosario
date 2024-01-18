@@ -508,7 +508,7 @@ color: #fff;
         width: 90%;
         margin: 1em;
         line-height: 1.5em;
-        top: 37%;
+        top: 55%;
     } 
 
     .texto_proyectos_prodcutivos {
@@ -1061,7 +1061,7 @@ h3 {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 37%;
+    top: 55%;
     left: 9%;
     background-color:#299bb6 ;
     border: none;
@@ -1284,6 +1284,18 @@ footer {
         border-radius: 10px; /* Tu valor de border-radius aquí */
     }
 
+    .flex-center {
+        height: 65em;
+    }
+
+    .texto_quienes_somos {
+        top: 60%;
+    }
+
+    .ver_mas {
+        top: 60%;
+    }
+
         
 
     }
@@ -1334,6 +1346,18 @@ footer {
     
     
     
+}
+
+.flex-center {
+    height: 65em;
+}
+
+.texto_quienes_somos {
+    top: 60%;
+}
+
+.ver_mas {
+    top: 60%;
 }
 
 
@@ -1410,6 +1434,13 @@ footer {
 
     
 
+    header {
+        height: 12em;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
     
     .encuentro_letras {
         
@@ -1418,6 +1449,7 @@ footer {
         position: relative;
         top: 2%;
         height: 6em;
+        z-index: 550;
         
         
         
@@ -1519,10 +1551,7 @@ footer {
         
     }
 
-    .Encabezado {
-        height: 10em;
-    }
-
+    
     
 
     .nav_list ul li.active a .text {
@@ -1577,7 +1606,7 @@ footer {
     .quienes_somos{
         
         
-        top: 22%;
+        top: 25%;
         
         
         
@@ -1585,6 +1614,33 @@ footer {
         
         
         
+    }
+
+    .flex-center {
+        height: 65em;
+    }
+
+    #foto_fondo1:before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 15em;
+        right: 20%;
+        display: flex;
+
+        
+        top: 40%;
+    }
+
+    .texto_quienes_somos {
+        width: 90%;
+        top: 65%;
+        left: 5%;
+    }
+
+
+    .ver_mas {
+        top: 65%;
     }
 
     
@@ -1733,7 +1789,7 @@ footer {
     .nav_list ul {
         width: 100%;
         position: relative;
-        top: 20%;
+        top: 62%;
     }
 
     .nav_list ul li.active a .icon {
@@ -1742,31 +1798,44 @@ footer {
 
     .encuentro_letras {
         
-        width: 90%;
+        width: 100%;
         height: 8em;
         display: flex;
         margin: 0 auto;
         top: 2%;
+        left: 2%;
+        z-index: 550;
+        
+        
+        
         
         
         
         position: relative;
     }
 
-    .Encabezado {
-        height: 40em;
+    header {
+        height: 17em;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
     }
 
     .logo_header {
         
         padding-left: 2%; 
         
+        
+        
     }
 
     .logo_header img {
+        padding-top: 5%;
 
         width: 12em;
-        height: 7em;
+        height: 6.8em;
+        
+        
         
         
         
@@ -1775,7 +1844,7 @@ footer {
     .quienes_somos{
         
         
-        top: 23%;
+        top: 27%;
         
         
         
@@ -1783,6 +1852,37 @@ footer {
         
         
         
+    }
+
+    .flex-center {
+        height: 70em;
+    }
+
+    .texto_quienes_somos {
+        
+        top: 75%;
+        left: 5%;
+    }
+
+    .ver_mas {
+        
+        top: 75%;
+        
+    }
+
+    #foto_fondo1:before {
+        
+        width: 60%;
+        height: 20em;
+        right: 20%;
+    
+        top: 45%;
+    }
+
+    .foto_fondo {
+        height: 5em;
+        top: 10%;
+        background-color: #1b71aa;
     }
 
 }
