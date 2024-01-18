@@ -297,11 +297,11 @@ color: #fff;
 
 .nav_list ul li.active a .text2 {
     opacity: 1;
-    transform: translateY(-1.7em);
+    transform: translateY(-1.7em) translateX(0.3em);
     pointer-events: auto; 
     font-size: 14px;
     font-weight: bold;
-    margin-left: 15%;
+    margin-left: 10%;
     
 }
 
@@ -1244,6 +1244,12 @@ footer {
         
     }
 
+    .boton_honestidad {
+        position: relative;
+        
+        top: 25%;
+    }
+
     @media (min-width: 458px) and (max-width:552px) {
         .encuentro_letras {
             font-size: 1.2em;
@@ -1294,6 +1300,12 @@ footer {
 
     .ver_mas {
         top: 60%;
+    }
+
+    .boton_honestidad {
+        position: relative;
+        
+        top: 25%;
     }
 
         
@@ -1360,6 +1372,12 @@ footer {
     top: 60%;
 }
 
+.boton_honestidad {
+    position: relative;
+    top: 25%;
+    right: 35%;
+}
+
 
 
 
@@ -1407,6 +1425,26 @@ footer {
         
     
     }
+
+    .oportunidad {
+        top: 30%;
+    }
+
+    .slider_concejo {
+        align-items: center;
+        
+    }
+
+    .texto_leo_concejo {
+        
+        width: 90%;
+        
+        
+        top: 25%;
+        
+    }
+
+    
 
     
 
@@ -1643,6 +1681,14 @@ footer {
         top: 65%;
     }
 
+    .oportunidad {
+        top: 40%;
+    }
+
+    .slider_concejo {
+        align-items: center;
+        
+    }
     
     
 
@@ -1868,6 +1914,7 @@ footer {
         
         top: 75%;
         
+        
     }
 
     #foto_fondo1:before {
@@ -1884,6 +1931,85 @@ footer {
         top: 10%;
         background-color: #1b71aa;
     }
+
+    .oportunidad {
+        top: 50%;
+    }
+
+    .boton_honestidad {
+        position: relative;
+        top: 29%;
+        right: 43%;
+    }
+
+    .slider_concejo {
+        
+        align-items: center;
+        height: 30em;
+        
+        
+    }
+
+    .slider{
+        
+
+        height: 25em;
+        
+    }
+
+    .galeria_imagenes {
+        display: flex;
+        position: relative;
+        
+        width: 70%;
+        height: 530px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 1em;
+        
+    }
+
+    .tablon {
+        height: 70em;
+    }
+
+    .texto_leo_concejo {
+        
+        width: 90%;
+        
+    }
+
+    .boton_honestidad {
+        margin-left: 3%;
+    }
+
+    .row .col.s12 {
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    .container {
+        position: relative;
+        top: 5%;
+    }
+
+    .texto_proyectos_capacitaciones {
+        top: 5%;
+    }
+
+    .hon_produccion {
+        position: relative;
+        top: 5%;
+        left: 1%;
+    }
+
+    
+
+    
+
+    
+
+    
 
 }
 
