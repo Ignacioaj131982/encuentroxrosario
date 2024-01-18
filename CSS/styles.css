@@ -80,10 +80,11 @@ header {
     display: flex;
     position: relative;
     
-    width: 10em;
+    width: 100%;
     height: 5em;
-    
+    padding-left: 10%;
     bottom: 15%;
+    overflow: hidden;
 
     
     
@@ -93,6 +94,7 @@ header {
     width: 90%;
     height: auto;
     align-items: center;
+    
     
 }
     
@@ -123,6 +125,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    
     
     
 
@@ -279,7 +282,7 @@ color: #fff;
     pointer-events: auto; 
     font-size: 14px;
     font-weight: bold;
-    margin-right: 10%;
+    margin-right: 3.5em;
     
 }
 
@@ -329,7 +332,7 @@ color: #fff;
     list-style: none;
     width: 200px;
     background-color: rgba(41, 155, 182, 0.8);
-    left: -30%;
+    
 
     opacity: 0;
     visibility: hidden;
@@ -338,10 +341,12 @@ color: #fff;
 
 .menu_vertical.active {
     display: block !important; 
-    opacity: 1;
+    opacity: 0.8;
     visibility: visible;
     width: 120px;
     font-size: 1em;
+    height: 12em;
+    left: -350%;
 }
 
 .menu_vertical li a {
@@ -415,7 +420,7 @@ color: #fff;
         flex-direction: column;
         position: relative;
         width: 100%;
-        height: 80em;
+        height: 75em;
         overflow: hidden;
         
         
@@ -518,6 +523,20 @@ color: #fff;
         line-height: 1.5em;
         
         position: relative;
+        top: 0;
+        left: 5%;
+        
+    }
+
+    .texto_proyectos_capacitaciones1 {
+        padding: 1em;
+        width: 90%;
+        text-align: justify;
+        margin-top: 1em;
+        line-height: 1.5em;
+        
+        position: relative;
+        top: 4%;
         left: 5%;
         
     }
@@ -527,7 +546,7 @@ color: #fff;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 70em;
+        height: 75em;
         background: linear-gradient(45deg,#f1f1f1, #299bb6, #1b71aa);
         background-size: 400%, 400%;
         position: relative;
@@ -746,6 +765,30 @@ color: #fff;
     transition: transform 0.3s ease;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
     top: 25%;
+    left: 5%;
+    
+}
+
+.honestidad1 {
+    
+    display: flex;
+    height: 2.2em;
+    width: 5.5em;
+    background: #eaddcc;
+    color: #607a9d;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius:  0.5em;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    top: 2.5em;
     left: 8%;
     
 }
@@ -857,7 +900,7 @@ color: #fff;
 
 #fondo5 {
     width: 100%;
-        height: 110em;
+        height: 120em;
         background-color:#f5f5f5;
         background: linear-gradient(to right, #f4f4f4, #dedede );
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
@@ -903,12 +946,22 @@ color: #fff;
 }
 
 .encuentroxrosario {
-    width: 14em;
+    width: 100%;
     font-size: 1.4em;
     color: #299bb6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-left: 10%;
+    text-align: center;
     
+    
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+h3 {
+    font-weight: bold;
 }
 
 .video {
@@ -1000,8 +1053,8 @@ color: #fff;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 35%;
-    left: 5.5%;
+    top: 32%;
+    left: 9%;
     background-color:#299bb6 ;
     border: none;
     height: 3em;
