@@ -59,6 +59,7 @@ header {
         position: relative;
         padding: 0.5px;
         margin: 0 auto;
+        top: 15%;
         
         
         
@@ -83,7 +84,7 @@ header {
     width: 100%;
     height: 5em;
     padding-left: 10%;
-    bottom: 15%;
+    
     overflow: hidden;
 
     
@@ -443,7 +444,7 @@ color: #fff;
     .foto_fondo {
     
         
-        height: 20em;
+        height: 15em;
         top: 10%;
     }
 
@@ -466,15 +467,17 @@ color: #fff;
     }
 
     .quienes_somos{
-        top: 85%;
+        
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 2em;
         text-align: center;
         position: relative;
+        top: 18%;
         color: #299bb6;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        
         
 
         
@@ -484,9 +487,14 @@ color: #fff;
 
     .Titulo_quienes_somos {
         font-weight: bold;
+        position: relative;
         
-        display: flex;
         margin: 0 auto;
+        
+
+        display: flex;
+        text-align: center;
+        
         
         
         
@@ -500,7 +508,7 @@ color: #fff;
         width: 90%;
         margin: 1em;
         line-height: 1.5em;
-        top: 32%;
+        top: 37%;
     } 
 
     .texto_proyectos_prodcutivos {
@@ -1053,7 +1061,7 @@ h3 {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 32%;
+    top: 37%;
     left: 9%;
     background-color:#299bb6 ;
     border: none;
@@ -1241,6 +1249,8 @@ footer {
             font-size: 1.2em;
             padding-bottom: 1.5em;
             margin-bottom: 1em;
+            position: relative;
+            top: 2%;
             
             
         
@@ -1254,6 +1264,26 @@ footer {
             
         }
 
+        .logo_header {
+            position: relative;
+            padding-left: 3%;
+            padding-right: 3%;
+            
+            
+            
+        }
+
+        .logo_header img {
+            
+            position: relative;
+            
+    
+            
+        
+        
+        border-radius: 10px; /* Tu valor de border-radius aquí */
+    }
+
         
 
     }
@@ -1265,6 +1295,8 @@ footer {
         padding-bottom: 1.5em;
         margin-bottom: 1em;
         position: relative;
+        top: 2%;
+        height: 5em;
         
         
     
@@ -1277,20 +1309,36 @@ footer {
         height: 100%;
         align-items: center;
         
+        
+        
     }
 
     
 
     .logo_header img {
-        width: 9em;
-        height: 6em;
+        width: 8em;
+        height: 5em;
         position: relative;
-        bottom: 25%;
+        
+
         
     
     
     border-radius: 10px; /* Tu valor de border-radius aquí */
 }
+
+.logo_header {
+    position: relative;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+    
+    
+}
+
+
+
+
 
 
     
@@ -1344,12 +1392,33 @@ footer {
 
 @media (min-width: 714px) and (max-width: 929px) {
 
+    .Titulo_quienes_somos {
+        font-weight: bold;
+        position: relative;
+        
+        margin: 0 auto;
+        
+
+        display: flex;
+        text-align: center;
+        
+        
+        
+        
+    }
+    
+
+    
+
     
     .encuentro_letras {
-        font-size: 1.2em;
+        
         padding-bottom: 1.5em;
         margin: 0 auto;
         position: relative;
+        top: 2%;
+        height: 6em;
+        
         
         
         
@@ -1362,8 +1431,9 @@ footer {
 
     .encuentro_letras img {
         width: 95%;
-        height: 100%;
-        align-items: center;
+        height: 6em;
+        
+        
         
     }
 
@@ -1428,16 +1498,32 @@ footer {
     }
 
     .nav_list {
-        height: 15vh;
+        
         width: 100%;
+        position: relative;
+        top: 25%;
+    height: 7em;
+        
     }
 
+    
+
+
     .nav_list ul {
-        width: 700px;
+        width: 100%;
+        
+        position: relative;
+        top: 10%;
         
         
         
     }
+
+    .Encabezado {
+        height: 10em;
+    }
+
+    
 
     .nav_list ul li.active a .text {
         
@@ -1448,7 +1534,7 @@ footer {
     .icon-wrapper {
         display: inline-block;
         width: 2.5em; /* Ancho del ícono */
-        height: 2em; /* Altura del ícono */
+        height: 1.5em; /* Altura del ícono */
         font-size: 1em; /* Tamaño del ícono */
         line-height: 2.5em; /* Alinear verticalmente el ícono */
         overflow: hidden; /* Ocultar el contenido que exceda las dimensiones del contenedor */
@@ -1470,6 +1556,41 @@ footer {
     #fondo5 {
         height: 75em;
     }
+
+    .logo_header {
+        position: relative;
+        padding-left: 3%;
+        padding-right: 15%;
+        
+        
+        
+    }
+
+    .logo_header img {
+        width: 10em;
+        height: 7em;
+        position: relative;
+        
+        border-radius: 10px;
+    }
+
+    .quienes_somos{
+        
+        
+        top: 22%;
+        
+        
+        
+
+        
+        
+        
+    }
+
+    
+    
+
+
 
     
 
@@ -1516,26 +1637,9 @@ footer {
         
         
     }
-    #fondo3 {
-        width: 100%;
-            height: 30em;
-            background-image: url('../img/frutosterritorio2\(2\).jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-    
-    }
 
-    .frutos_territorio {
-        max-width: 120em;
-        padding: 1em;
-        align-items: center;
-        align-content: center;
-        position: relative;
-        
-        
-        
-        
-    }
+
+    
 
     .monumento {
         height: 20em;
@@ -1605,8 +1709,11 @@ footer {
     }
 
     .nav_list {
-        height: 4.5em;
+        
         width: 100%;
+        height: 5em;
+        position: relative;
+        top: 7%;
     }
 
     .icon-wrapper {
@@ -1624,19 +1731,71 @@ footer {
     }
 
     .nav_list ul {
-        width: 700px;
+        width: 100%;
+        position: relative;
+        top: 20%;
     }
 
-    
+    .nav_list ul li.active a .icon {
+        transform: translateY(-15px);
+    }
 
-   
-    
-    
+    .encuentro_letras {
+        
+        width: 90%;
+        height: 8em;
+        display: flex;
+        margin: 0 auto;
+        top: 2%;
+        
+        
+        
+        position: relative;
+    }
 
-    
-    
-    
+    .Encabezado {
+        height: 40em;
+    }
+
+    .logo_header {
+        
+        padding-left: 2%; 
+        
+    }
+
+    .logo_header img {
+
+        width: 12em;
+        height: 7em;
+        
+        
+        
+    }
+
+    .quienes_somos{
+        
+        
+        top: 23%;
+        
+        
+        
+
+        
+        
+        
+    }
+
 }
+
+
+
+    
+    
+
+    
+    
+    
+
 
 
 
@@ -1770,7 +1929,7 @@ footer {
 
     .nav_list ul li.active a .text {
         opacity: 1;
-        transform: translateY(10px);
+        transform: translateY(20px);
         pointer-events: auto; 
 
     }
