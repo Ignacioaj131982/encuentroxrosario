@@ -1308,6 +1308,8 @@ footer {
         top: 25%;
     }
 
+    
+
         
 
     }
@@ -1443,6 +1445,19 @@ footer {
         top: 25%;
         
     }
+
+    .mySlides img {
+        vertical-align: middle;
+        border-radius: 15px;
+        height: 50em;
+    }
+
+    .honestidad1 {
+        top: 3em;
+        left: 5%;
+    }
+
+   
 
     
 
@@ -1614,14 +1629,14 @@ footer {
 
     .cuerpo  {
     
-        text-align: center;
+        text-align: justify;
         width: 90%;
         margin: 1.5em;
         
     }
 
     #fondo5 {
-        height: 75em;
+        height: 102em;
     }
 
     .logo_header {
@@ -1688,6 +1703,17 @@ footer {
     .slider_concejo {
         align-items: center;
         
+    }
+
+    .mySlides img {
+        vertical-align: middle;
+        border-radius: 15px;
+        height: 50em;
+    }
+
+    .honestidad1 {
+        top: 3em;
+        left: 5%;
     }
     
     
@@ -1773,7 +1799,7 @@ footer {
     .novedades {
         width: 100%;
         position: relative;
-        height: 70em;
+        height: 95em;
         overflow: hidden;
         top: 2%;
         display: flex;
@@ -1786,7 +1812,7 @@ footer {
 
     #fondo5 {
         width: 100%;
-            height: 70em;
+            height: 102em;
     }
 
     .cuerpo {
@@ -2003,8 +2029,22 @@ footer {
         left: 1%;
     }
 
-    
+    .menu_vertical.active {
+        top: 0;
+        left: -350%;
+    }
 
+    .mySlides img {
+        vertical-align: middle;
+        border-radius: 15px;
+        height: 50em;
+    }
+
+    .honestidad1 {
+        top: 3em;
+        left: 6%;
+    }
+    
     
 
     
@@ -2147,7 +2187,7 @@ footer {
     
     
     #fondo5 {
-        height: 75em;
+        height: 103em;
         width: 100%;
         
     }
@@ -2162,13 +2202,14 @@ footer {
 
     .novedades {
         width: 100%;
-        height: 90em;
+        height: 93em;
+        
 
     }
 
     footer {
         width: 100%;
-        height: 25em;
+        height:  58em;
     }
 
     

@@ -368,6 +368,39 @@
 
 }
 
+@media (min-width: 375px) and (max-width: 530px) {
+    .flex-center3 {
+        height: 90em;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 714px) {
+    
+    .flex-center3 {
+        height: 90em;
+    }
+}
+
+@media (min-width: 714px) and (max-width: 929px) {
+
+
+
+    .flex-center3 {
+        height: 85em;
+    }
+}
+
+@media (min-width: 930px) {
+    .flex-center3 {
+        height: 85em;
+    }
+}
+
+
+
+
+
+
 
 
 
