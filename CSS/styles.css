@@ -911,7 +911,7 @@ color: #fff;
         height: 120em;
         background-color:#f5f5f5;
         background: linear-gradient(to right, #f4f4f4, #dedede );
-        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        
         
         
        
@@ -1898,7 +1898,7 @@ footer {
         display: flex;
         margin: 0 auto;
         top: 2%;
-        left: 2%;
+        
         z-index: 550;
         
         
@@ -1908,6 +1908,8 @@ footer {
         
         position: relative;
     }
+
+    
 
     header {
         height: 17em;
@@ -2040,7 +2042,10 @@ footer {
     .container {
         position: relative;
         top: 5%;
+        
     }
+
+    
 
     .texto_proyectos_capacitaciones {
         top: 5%;
