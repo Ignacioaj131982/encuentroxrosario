@@ -16,7 +16,7 @@ html {
     
 }
 header {
-    position: absolute;
+    position: relative;
     width: 100%;
     background: linear-gradient(to right, #f4f4f4, #dedede );
     
@@ -1913,7 +1913,7 @@ footer {
 
     header {
         height: 17em;
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
     }

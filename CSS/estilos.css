@@ -511,7 +511,7 @@
 
 .imagen_movilizacion {
     display: flex;
-    height: 18em;
+    height: 25em;
     width: 100%;
 }
 
@@ -541,7 +541,7 @@
 
 .texto_quienes_somos1 {
     color: #299bb6;
-    
+    text-align: justify;
     
     padding: 1em;
     
@@ -560,6 +560,32 @@
 
     
 }
+
+
+
+.padre-0 {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+.padre-0 div {
+    
+    padding: 100px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.padre-1 div {
+    border: 1px solid lightgray;
+    padding: 100px;
+    font-size: 20px;
+}
+
+
 
 @media (min-width: 300px) and (max-width: 530px) {
 
@@ -644,6 +670,12 @@
 
     .imagen_carlitos img {
         display: none;
+    }
+
+    .in-flex {
+        position: relative;
+        background-color: #1b71aa;
+        margin-top: 2em;
     }
 }
 
@@ -742,9 +774,9 @@
 
     .texto_quienes_somos1 {
         color: #299bb6;
-        padding: 1em;
+        top: 5%;
        position: relative;
-       bottom: 2%;
+       
        font-size: 0.9em;
     }
 
@@ -763,6 +795,39 @@
     .flex-center3 {
         height: 85em;
     }
+
+    .padre-0 div {
+        position: relative;
+        top: 5%;
+    }
+
+    .hijo-3 {
+        position: relative;
+        
+        
+    }
+
+    .imagen_movilizacion  {
+        
+        height: 17em;
+        width: 100%;
+        
+        
+    }
+
+    .flex-center1 {
+        
+        height: 260em;
+        
+    }
+
+    
+
+    .hijo-3 div {
+        padding: 0;
+    }
+
+    
 }
 
 @media (min-width: 930px) {
@@ -778,6 +843,12 @@
         display: none;
        
        
+    }
+
+    .flex-center1 {
+        
+        height: 300em;
+        
     }
 }
 
