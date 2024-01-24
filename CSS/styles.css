@@ -462,7 +462,7 @@ color: #fff;
         background-position: center;
         animation: zoomIn 5s ease forwards;
         right: 10%;
-        top: 28%;
+        top: 20%;
         
     }
 
@@ -474,7 +474,7 @@ color: #fff;
         height: 2em;
         text-align: center;
         position: relative;
-        top: 15%;
+        top: 5%;
         color: #299bb6;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         
@@ -508,7 +508,7 @@ color: #fff;
         width: 90%;
         margin: 1em;
         line-height: 1.5em;
-        top: 45%;
+        top: 40%;
     } 
 
     .texto_proyectos_prodcutivos {
@@ -1260,7 +1260,7 @@ footer {
     @media (min-width: 458px) and (max-width:552px) {
 
         .quienes_somos {
-            top: 20%;
+            top: 5%;
         }
         .encuentro_letras {
             font-size: 1.2em;
@@ -1306,11 +1306,11 @@ footer {
     }
 
     .texto_quienes_somos {
-        top: 60%;
+        top: 40%;
     }
 
     .ver_mas {
-        top: 60%;
+        top: 40%;
     }
 
     .boton_honestidad {
@@ -1320,7 +1320,7 @@ footer {
     }
 
     #foto_fondo1:before {
-        top: 35%;
+        top: 20%;
     }
 
     
@@ -1382,7 +1382,7 @@ footer {
 }
 
 .texto_quienes_somos {
-    top: 60%;
+    top: 50%;
 }
 
 .ver_mas {
@@ -1396,11 +1396,11 @@ footer {
 }
 
 .quienes_somos {
-    top: 20%;
+    top: 5%;
 }
 
 #foto_fondo1:before {
-    top: 35%;
+    top: 25%;
 }
 
 
@@ -1941,7 +1941,7 @@ footer {
     .quienes_somos{
         
         
-        top: 27%;
+        top: 5%;
         
         
         
@@ -1957,13 +1957,13 @@ footer {
 
     .texto_quienes_somos {
         
-        top: 75%;
+        top: 56%;
         left: 5%;
     }
 
     .ver_mas {
         
-        top: 75%;
+        top: 60%;
         
         
     }
@@ -1974,7 +1974,7 @@ footer {
         height: 20em;
         right: 20%;
     
-        top: 45%;
+        top: 22%;
     }
 
     .foto_fondo {

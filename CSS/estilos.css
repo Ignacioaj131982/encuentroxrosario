@@ -589,14 +589,7 @@
 
 @media (min-width: 300px) and (max-width: 530px) {
 
-    .in-flex:first-child {
-        margin: 0 auto;
-        position: relative;
-        
-        
-        
-        
-    }
+    
 
     .imagen_plenario img {
         width: 90%;
@@ -628,25 +621,65 @@
 
     .texto_quienes_somos1 {
         text-align: justify;
-        padding: 0;
+        margin-top: 1em;
+        
         
     }
 
     .imagen_lanzamiento {
-        display: flex;
         position: relative;
-        width: 100%;
+        width: 90%;
+        bottom: 10%;
         
-        top: 3%;
+        
+        
+        
+        
     }
 
     .imagen_lanzamiento img {
-        display: flex;
-        position: relative;
-        width: 20em;
-        height: 20em;
-        bottom:  30%;
+        
+        width: 100%;
+        
+        
     }
+
+    .imagen_movilizacion {
+        position: relative;
+        width: 90%;
+        
+        
+    }
+
+    
+    .imagen_carlitos {
+        position: relative;
+        width: 90%;
+        
+        
+    }
+
+    
+
+    .hijo-3 div {
+        padding: 0;
+        margin: 0 auto;
+        
+        height: 13em;
+        
+        
+    }
+
+    .hijo-2 div {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    
+
+    
+
+    
 
     .home {
         top: 8%;
@@ -655,7 +688,7 @@
     }
 
     .flex-center1 {
-        height: 218em;
+        height: 290em;
 
 
     }
@@ -668,15 +701,21 @@
         height: 90em;
     }
 
-    .imagen_carlitos img {
-        display: none;
+    .padre-0 div {
+        
+        padding: 0;
+        top: 2%;
+
     }
 
-    .in-flex {
-        position: relative;
-        background-color: #1b71aa;
-        margin-top: 2em;
+    #Movilizacion {
+        padding-top: 0;
+        padding-bottom: 0;
     }
+
+    
+
+    
 }
 
 @media (min-width: 530px) and (max-width: 714px) {
@@ -695,7 +734,7 @@
        position: relative;
        bottom: 2%;
        font-size: 0.9em;
-       display: none;
+       
        
     }
 
@@ -709,34 +748,8 @@
        
     }
 
-    .imagen_plenario img {
-        width: 100%;
-        height: 15em;
-        border-radius: 15px;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    }
 
-    .imagen_parrilleros img {
-        width: 100%;
-        height: 15em;
-    }
-
-    .imagen_carlitos img {
-        width: 100%;
-        border-radius: 15px;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .in-flex1 {
-        flex: 1;
-        min-width: 250px;
-        display: none;
-        flex-direction: column;
-        height: 30em;
-        right: 28em;
-        bottom: 28em;
-        
-    }
+    
 
     .in-flex2 {
         flex: 1;
@@ -752,13 +765,29 @@
 
     .flex-center1 {
         
-        height: 132em;
+        height: 230em;
         
     }
 
     
     .flex-center3 {
         height: 90em;
+    }
+
+    #Movilizacion {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .hijo-2  {
+        
+        position: relative;
+        bottom: 10%;
+    }
+
+    .hijo-3 div {
+        padding: 0;
+        
     }
 
 }
@@ -774,8 +803,7 @@
 
     .texto_quienes_somos1 {
         color: #299bb6;
-        top: 5%;
-       position: relative;
+       
        
        font-size: 0.9em;
     }
@@ -823,8 +851,14 @@
 
     
 
+    #Movilizacion {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     .hijo-3 div {
         padding: 0;
+        
     }
 
     
@@ -847,7 +881,23 @@
 
     .flex-center1 {
         
-        height: 300em;
+        height: 320em;
+        
+    }
+
+    #Movilizacion {
+        
+        padding-bottom: 0;
+    }
+
+    .hijo-2  {
+        
+        position: relative;
+        top: 10%;
+    }
+
+    .hijo-3 div {
+        padding: 0;
         
     }
 }
