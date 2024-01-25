@@ -1,3 +1,6 @@
+console.log("Inicio de script.js");
+
+
 function activarAnimacion() {
     var elemento1 = document.querySelector('.encontrarnos');
     var elemento2 = document.querySelector('.barrioxbarrio')
@@ -183,18 +186,22 @@ function currentSlides(n) {
     slideIndex = n;
     showSlides(slideIndex);
 }
+console.log("Después de una sección importante");
 
 window.onscroll = function() {
+    console.log("Se activó el evento de desplazamiento");
     if(document.documentElement.scrollTop > 100) {
+        console.log("Se cumple la condición scrollTop > 100");
         document.querySelector('.go-top-container').classList.add('show');
     } else {
+        console.log("No se cumple la condición scrollTop > 100");
         document.querySelector('.go-top-container').classList.remove('show');
 
 
     }
 }
 
-document.querySelector('.go-top-container').addEventListener('click', () => {
+document.querySelector('.go-top-container').addEventListener('click',  () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -202,3 +209,4 @@ document.querySelector('.go-top-container').addEventListener('click', () => {
     });
 });
 
+console.log("Fin de script.js");
