@@ -126,6 +126,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    z-index: 20;
     
     
     
@@ -348,6 +349,7 @@ color: #fff;
     font-size: 1em;
     height: 12em;
     left: -350%;
+    
 }
 
 .menu_vertical li a {
@@ -1912,7 +1914,7 @@ footer {
     
 
     header {
-        height: 17em;
+        height: 16em;
         position: relative;
         display: flex;
         flex-direction: column;

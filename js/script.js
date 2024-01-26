@@ -236,6 +236,7 @@ prev.onclick = function() {
     showSlider();
 }
 
+
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();
@@ -253,6 +254,10 @@ function showSlider() {
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
 
+    // Additional code to prevent propagation (stop the event from reaching other elements)
+    event.stopPropagation();
+
+    
     // clear new item run slider
     clearInterval(refreshInterval);
     let refreshInterval = setInterval(() => {
