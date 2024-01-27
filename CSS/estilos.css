@@ -566,7 +566,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: 400em;
+    height: 100%;
     overflow: hidden;
     
     
@@ -722,10 +722,11 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .thumbnail_productivo .item.active {
-    filter: brightness(1.5);
+    filter: brightness(1);
 }
 
 .thumbnail_productivo .item .content_productivo {
@@ -1036,6 +1037,8 @@
         height: 260em;
         
     }
+
+    
 
     
 

@@ -1512,12 +1512,21 @@ footer {
 
     
 
-    header {
+    .header {
         height: 12em;
         position: absolute;
         display: flex;
         flex-direction: column;
     }
+
+    .header_productivo {
+        height: 12em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 
     
     .encuentro_letras {

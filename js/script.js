@@ -240,7 +240,7 @@ prev.onclick = function() {
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();
-}, 3000);
+}, 5000);
 
 
 function showSlider() {
@@ -260,9 +260,9 @@ function showSlider() {
     
     // clear new item run slider
     clearInterval(refreshInterval);
-    let refreshInterval = setInterval(() => {
+    refreshInterval = setInterval(() => {
         next.click();
-    }, 3000);
+    }, 5000);
 
 
 }
