@@ -791,10 +791,15 @@
     vertical-align: top;
     transition: 0.6s;
     transition-property: opacity;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .image_capacitaciones:hover img {
     opacity: 1;
+    
     
 }
 
@@ -1144,6 +1149,24 @@
         
     }
 
+    .row_capacitaciones {
+        width: 100%;
+        top: 3%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .flex-center5 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 160em;
+        overflow: hidden;
+    }
+
     
 
     
@@ -1205,6 +1228,27 @@
         flex: 100%;
         max-width: 480px;
     }
+}
+
+@media (max-width: 323px) {
+    .more_capacitaciones {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px;
+        bottom: -60px;
+        transition: 0.6s;
+        transition-property: bottom;
+        
+    }
+    .more_capacitaciones .read-more, .more_capacitaciones .icons-links a i {
+        font-size: 18px;
+       
+    }
+
 }
 
 @media (max-width: 400px) {
