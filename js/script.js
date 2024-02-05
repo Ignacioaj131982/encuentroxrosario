@@ -113,7 +113,7 @@ territorioLink.addEventListener('click', function (event) {
 });
 
 // Cerrar el menú si se hace clic fuera de él
-document.addEventListener('click', function (event) {
+/*document.addEventListener('click', function (event) {
     const isTerritorioLink = event.target === territorioLink || territorioLink.contains(event.target);
     const isMenuVertical = event.target === menuVertical || menuVertical.contains(event.target);
 
@@ -121,7 +121,22 @@ document.addEventListener('click', function (event) {
         menuVertical.classList.remove('active');
         console.log('Close menu');
     }
+});*/
+
+// Cerrar el menú si se hace clic fuera de él
+document.addEventListener('click', function (event) {
+    const isTerritorioLink = event.target === territorioLink || territorioLink.contains(event.target);
+    const isMenuVertical = event.target === menuVertical || menuVertical.contains(event.target);
+
+    console.log('isTerritorioLink:', isTerritorioLink);
+    console.log('isMenuVertical:', isMenuVertical);
+
+    if (!isTerritorioLink && !isMenuVertical) {
+        menuVertical.classList.remove('active');
+        console.log('Close menu');
+    }
 });
+
 
 
 var slideIndex = 1;
@@ -275,5 +290,52 @@ thumbnails.forEach((thumbnail, index) => {
     })
 })
 
+/*
+$(document).ready(function(){
+    $(".icons-links").click(function(){
+        $(".icons-links").toggleClass("heart-active")
+        $(".like").toggleClass("heart-active")
+        $(".heart").toggleClass("heart-active")
+
+
+    });
+
+});*/
+
+/*$(document).ready(function(){
+    $(".icons-links").click(function(){
+        $(".icons-links").toggleClass("heart-active");
+        $(".like").toggleClass("heart-active");
+        $(".heart i").toggleClass("heart-active"); // Cambiado para afectar directamente al icono
+
+        // Agregado para evitar que el evento de clic se propague y active el evento en elementos anidados
+        return false;
+    });
+});*/
+
+/*$(document).ready(function(){
+    $(".heart").click(function(event){
+        event.preventDefault();
+        $(".icons-links").toggleClass("heart-active");
+        $(".heart-icon i").toggleClass("heart-active");
+    });
+});*/
+
+
+
+
+
+
+
+
+
+
+
 
 console.log("Fin de script.js");
+
+
+
+
+
+

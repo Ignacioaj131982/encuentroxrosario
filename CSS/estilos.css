@@ -871,6 +871,46 @@
 .more_capacitaciones .icons-links i {
     color: #000;
     font-size: 20px;
+
+}
+
+.more_capacitaciones .icons-links .heart i {
+    color: grey;
+ 
+ }
+
+/*.more_capacitaciones .icons-links .heart:active i {
+    
+    font-size: 20px;
+    color: red !important;
+    border: 1px solid red;
+
+}*/
+
+.more_capacitaciones .icons-links .heart.active i {
+    font-size: 20px;
+    color: red; /* Puedes cambiar este color según tus preferencias */
+    border: 1px solid red;
+}
+
+
+
+
+
+@keyframes animate {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+
+}
+
+.more_capacitaciones .icons-links .numb::before {
+    content: '12';
+    font-size: 20px;
+    
 }
 
 .more_capacitaciones .icons-links a:not(:last-child) i {
