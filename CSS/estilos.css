@@ -565,11 +565,16 @@
     height: 100%;
     overflow: hidden;
     
-    
-    
+    }
 
-    
-}
+    .flex-center5_solid {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 
 
 .padre-0 {
@@ -927,6 +932,99 @@
 
 }
 
+.body_solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #d6d6d6, #dedede );
+    flex-wrap: wrap;
+}
+
+.card_solid {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card_solid .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card_solid .front {
+    transform: perspective(600px) rotatey(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card_solid .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card_solid .front h3 {
+    position: absolute;
+    bottom: -5%;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+
+}
+
+.card_solid .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(0, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+
+}
+
+.card_solid .back .link_solid {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.card_solid .back .link_solid a {
+    color: #f3f3f3;
+}
+
+.card_solid .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card_solid .back p {
+    letter-spacing: 1px;
+}
+
+.card_solid:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card_solid:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
 @media (min-width: 300px) and (max-width: 530px) {
 
     
@@ -1133,6 +1231,8 @@
 }
 
 @media (min-width: 714px) and (max-width: 929px) {
+
+    
    
     .home {
         display: flex;
@@ -1205,6 +1305,18 @@
         width: 100%;
         height: 160em;
         overflow: hidden;
+    }
+
+    .flex-center5_solid {
+        
+        height: auto;
+        
+    }
+
+    .body_solid {
+        
+        min-height: 203vh;
+        
     }
 
     
