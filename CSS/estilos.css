@@ -576,6 +576,16 @@
         overflow: hidden;
     }
 
+    .flex-center5_nov {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+
 
 .padre-0 {
     
@@ -1025,6 +1035,58 @@
     transform: perspective(600px) rotateY(360deg);
 }
 
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.elemento1 {
+    grid-area: elemento1;
+    background-color: green;
+}
+
+.elemento2 {
+    grid-area: elemento2;
+    background-color: yellow;
+}
+
+.elemento3 {
+    grid-area: elemento3;
+    background-color: pink;
+}
+
+.elemento4 {
+    grid-area: elemento4;
+    background-color: blue;
+}
+
+.elemento5 {
+    grid-area: elemento5;
+    background-color: red;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    height: 200vh;
+    grid-template: 
+    "elemento1" 100px
+    "elemento2" 50px
+    "elemento3" auto
+    "elemento4" 100px
+    "elemento5" 100px;
+}
+
+
+
+
 @media (min-width: 300px) and (max-width: 530px) {
 
     
@@ -1135,9 +1197,7 @@
     }
 
     
-    .flex-center3 {
-        height: 90em;
-    }
+    
 
     .padre-0 div {
         
@@ -1209,7 +1269,7 @@
 
     
     .flex-center3 {
-        height: 90em;
+        height: 0em;
     }
 
     #Movilizacion {
@@ -1226,6 +1286,23 @@
     .hijo-3 div {
         padding: 0;
         
+    }
+
+    .grid-container {
+       /* grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;*/
+        /*grid-template-areas: 
+        
+    "elemento1 elemento1"
+    "elemento2 elemento2"
+    "elemento3 elemento4"
+    "elemento5 elemento5";*/
+    grid-template:
+    "elemento1 elemento1" 100px
+    "elemento2 elemento2" 50px
+    "elemento3 elemento4" auto
+    "elemento5 elemento5" 100px /
+    200px      auto;
     }
 
 }
@@ -1333,6 +1410,16 @@
         
     }
 
+    .grid-container {
+        
+    grid-template:
+    "elemento1 elemento1" 100px
+    "elemento2 elemento2" 50px
+    "elemento3 elemento4" auto
+    "elemento5 elemento5" 100px /
+    200px      auto;
+    }
+
     
 }
 
@@ -1371,6 +1458,14 @@
     .hijo-3 div {
         padding: 0;
         
+    }
+
+    .grid-container {
+    grid-template:
+    "elemento1 elemento1 elemento1" 100px
+    "elemento2 elemento3 elemento4" auto
+    "elemento5 elemento5 elemento5" 100px /
+    200px      auto      200px;
     }
 }
 
