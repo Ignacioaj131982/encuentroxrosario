@@ -1223,9 +1223,7 @@
 
     
 
-    .elemento2 {
-        background: linear-gradient(to right, #f4f4f4, #dedede );
-    }
+    
 
     .elemento3 {
         text-align: center;
@@ -1346,15 +1344,7 @@
         200px      auto;
         }
     
-        .elemento1 {
-            background: #dedede;
-            
-            
-        }
-    
-        .elemento3 {
-            background: #dedede;
-        }
+        
 
 }
 
@@ -1473,15 +1463,12 @@
     }
 
     .elemento1 {
-        background: #dedede;
+        
         margin-top: 30px;
         
     }
 
-    .elemento3 {
-        background: #dedede;
-    }
-
+    
     
 }
 
