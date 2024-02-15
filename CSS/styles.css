@@ -942,6 +942,16 @@ color: #fff;
     
 }
 
+.novedades2 {
+    font-size: 3em;
+    color: #299bb6;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+    
+    
+}
+
 .proyectos_productivos {
     position: absolute;
     top: 2%;

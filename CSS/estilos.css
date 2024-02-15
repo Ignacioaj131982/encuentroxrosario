@@ -1037,36 +1037,41 @@
 
 
 .grid-container > * {
-    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 4px;
+    
+    
     padding: 10px;
     text-align: center;
+    
 
 }
 
 .elemento1 {
     grid-area: elemento1;
-    background-color: green;
+    background:  #dedede;
+    
+    
 }
 
 .elemento2 {
     grid-area: elemento2;
-    background-color: yellow;
+    background:  #dedede;
 }
 
 .elemento3 {
     grid-area: elemento3;
-    background-color: pink;
+    background:  #dedede;
+    
 }
 
 .elemento4 {
     grid-area: elemento4;
-    background-color: blue;
+    background:  #dedede;
 }
 
 .elemento5 {
     grid-area: elemento5;
-    background-color: red;
+    background:  #dedede;
+    
 }
 
 
@@ -1074,15 +1079,20 @@
 
 .grid-container {
     display: grid;
-    gap: 10px;
+    
     height: 200vh;
     grid-template: 
     "elemento1" 100px
     "elemento2" 50px
     "elemento3" auto
     "elemento4" 100px
-    "elemento5" 100px;
+    
+    
+
+    
 }
+
+
 
 
 
@@ -1213,6 +1223,43 @@
 
     
 
+    .elemento2 {
+        background: linear-gradient(to right, #f4f4f4, #dedede );
+    }
+
+    .elemento3 {
+        text-align: center;
+    }
+
+    .elemento3 .tweeter {
+        width: 92%; /* Establece el ancho al 100% del contenedor padre */
+    }
+
+    .novedades2 {
+        font-size: 3em;
+        color: #299bb6;
+        width: 90%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        
+        
+        
+    }
+
+    .grid-container {
+        display: grid;
+        
+        height: 200vh;
+        grid-template: 
+        "elemento1" 100px
+        "elemento2" 50px
+        "elemento3" auto
+        "elemento4" 100px
+        
+        
+    
+        
+    }
+
     
 }
 
@@ -1289,21 +1336,25 @@
     }
 
     .grid-container {
-       /* grid-template-columns: 200px auto;
-        grid-template-rows: 100px 50px auto 100px;*/
-        /*grid-template-areas: 
         
-    "elemento1 elemento1"
-    "elemento2 elemento2"
-    "elemento3 elemento4"
-    "elemento5 elemento5";*/
-    grid-template:
-    "elemento1 elemento1" 100px
-    "elemento2 elemento2" 50px
-    "elemento3 elemento4" auto
-    "elemento5 elemento5" 100px /
-    200px      auto;
-    }
+        grid-template:
+        "elemento1 elemento1" 15%
+        "elemento2 elemento2" 0
+        "elemento3 elemento3" auto
+        "elemento4 elemento4" 0
+        "elemento5 elemento5" 100px /
+        200px      auto;
+        }
+    
+        .elemento1 {
+            background: #dedede;
+            
+            
+        }
+    
+        .elemento3 {
+            background: #dedede;
+        }
 
 }
 
@@ -1413,11 +1464,22 @@
     .grid-container {
         
     grid-template:
-    "elemento1 elemento1" 100px
-    "elemento2 elemento2" 50px
-    "elemento3 elemento4" auto
+    "elemento1 elemento1" 15%
+    "elemento2 elemento2" 0
+    "elemento3 elemento3" auto
+    "elemento4 elemento4" 0
     "elemento5 elemento5" 100px /
     200px      auto;
+    }
+
+    .elemento1 {
+        background: #dedede;
+        margin-top: 30px;
+        
+    }
+
+    .elemento3 {
+        background: #dedede;
     }
 
     
