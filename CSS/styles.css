@@ -44,7 +44,54 @@ header {
 }
 
 
+#twitter {
+    font-size: 19px;
+}
+
+#WhatsApp, #facebook, #instagram, #gmail, #twitter {
+    /* Estilos para el icono */
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
     
+}
+
+#WhatsApp:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    color: #fff; /* Cambio de color del icono al hacer hover */
+    background-color: #0df053; /* Color de fondo verde */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+#facebook:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    color: #fff; /* Cambio de color del icono al hacer hover */
+    background-color:  #3b5998; /* Color de fondo azul */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+#instagram:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    color: #fff; /* Cambio de color del icono al hacer hover */
+    background: linear-gradient(225deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); /* Fondo degradado */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+#gmail:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    background: linear-gradient(to right, #4285F4, #DB4437, #F4B400, #0F9D58); /* Fondo degradado con colores de Gmail */
+    -webkit-background-clip: text; /* Para hacer que el degradado afecte solo al texto */
+    background-clip: text; /* Para hacer que el degradado afecte solo al texto */
+    color: transparent; /* Hacer que el texto sea transparente para que se muestre el degradado */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+#twitter:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    color: #ffffff; /* Cambio de color del icono al hacer hover */
+    background-color:  #000000; /* Color de fondo azul */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
 
     .btn-wsp:hover {
         text-decoration: none;
