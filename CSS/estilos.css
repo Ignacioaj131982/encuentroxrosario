@@ -1045,6 +1045,15 @@
 
 }
 
+.grid-container_legal > * {
+    
+    
+    padding: 10px;
+    text-align: center;
+    
+
+}
+
 .elemento1 {
     grid-area: elemento1;
     background:  #dedede;
@@ -1055,6 +1064,7 @@
 .elemento2 {
     grid-area: elemento2;
     background:  #dedede;
+    
 }
 
 .elemento3 {
@@ -1092,7 +1102,55 @@
     
 }
 
+.grid-container_legal {
+    display: grid;
+    
+    height: auto;
+    grid-template: 
+    "elemento1" 100px
+    "elemento2" 50px
+    "elemento3" auto
+    "elemento4" 100px
+    
+    
 
+    
+}
+
+.legal {
+    
+    text-align: justify;
+    color: #299bb6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 3;
+    margin-top: 4em;
+    
+}
+
+.legal2 {
+    font-size: 2.5em;
+    color: #299bb6;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+    
+    
+    
+}
+
+#legal3 {
+    font-size: 5em;
+    color: #299bb6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+
+#legal4 {
+    font-size: 5em;
+    color: #299bb6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
 
 
 
@@ -1243,6 +1301,17 @@
         
     }
 
+    .legal2 {
+        font-size: 2.5em;
+        color: #299bb6;
+        width: 90%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        
+        
+        
+        
+    }
+
     .grid-container {
         display: grid;
         
@@ -1259,6 +1328,27 @@
     
         
     }
+
+    .grid-container_legal {
+        display: grid;
+        
+        height: 350vh;
+        grid-template: 
+        "elemento1" 100px
+        "elemento2" auto
+        "elemento3" auto
+        "elemento4" 100px
+        "elemento5" 50px
+        
+        
+        
+    
+        
+    }
+
+   #legal4 {
+    display: none;
+   }
 
     
 }
@@ -1345,8 +1435,21 @@
         "elemento5 elemento5" 100px /
         200px      auto;
         }
-    
+
+        .grid-container_legal {
         
+            grid-template:
+            "elemento1 elemento1" 15%
+            "elemento2 elemento2" auto
+            "elemento3 elemento3" auto
+            "elemento4 elemento4" 0
+            "elemento5 elemento5" 100px /
+            200px      auto;
+            }
+    
+            #legal4 {
+                display: none;
+               }
 
 }
 
@@ -1464,13 +1567,25 @@
     200px      auto;
     }
 
+    .grid-container_legal {
+        grid-template:
+    "elemento1 elemento1" 15%
+    "elemento2 elemento2" auto
+    "elemento3 elemento3" auto
+    "elemento4 elemento4" 0
+    "elemento5 elemento5" 100px /
+    200px      auto;
+    }
+
     .elemento1 {
         
         margin-top: 30px;
         
     }
 
-    
+    #legal4 {
+        display: none;
+       }
     
 }
 
@@ -1511,12 +1626,16 @@
         
     }
 
-    .grid-container {
+    .grid-container, .grid-container_legal {
     grid-template:
     "elemento1 elemento1 elemento1" 100px
     "elemento2 elemento3 elemento4" auto
     "elemento5 elemento5 elemento5" 100px /
     200px      auto      200px;
+    }
+
+    #legal3 {
+        display: none;
     }
 }
 
