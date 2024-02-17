@@ -1059,6 +1059,7 @@
     background:  #dedede;
     
     
+    
 }
 
 .elemento2 {
@@ -1090,7 +1091,7 @@
 .grid-container {
     display: grid;
     
-    height: 200vh;
+    height: auto;
     grid-template: 
     "elemento1" 100px
     "elemento2" 50px
@@ -1136,6 +1137,20 @@
     
     
     
+}
+
+.priv2 {
+    
+
+    font-size: 2.5em;
+    color: #299bb6;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+    
+    
+    
+
 }
 
 #legal3 {
@@ -1312,13 +1327,24 @@
         
     }
 
+    .priv2 {
+        font-size: 2.1em;
+        color: #299bb6;
+        
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        
+        
+        
+        
+    }
+
     .grid-container {
         display: grid;
         
         height: 200vh;
         grid-template: 
         "elemento1" 100px
-        "elemento2" 50px
+        "elemento2" auto
         "elemento3" auto
         "elemento4" 100px
         "elemento5" 50px
@@ -1332,7 +1358,7 @@
     .grid-container_legal {
         display: grid;
         
-        height: 350vh;
+        height: auto;
         grid-template: 
         "elemento1" 100px
         "elemento2" auto
@@ -1429,7 +1455,7 @@
         
         grid-template:
         "elemento1 elemento1" 15%
-        "elemento2 elemento2" 0
+        "elemento2 elemento2" auto
         "elemento3 elemento3" auto
         "elemento4 elemento4" 0
         "elemento5 elemento5" 100px /
@@ -1437,9 +1463,10 @@
         }
 
         .grid-container_legal {
+            height: auto;
         
             grid-template:
-            "elemento1 elemento1" 15%
+            "elemento1 elemento1" 10%
             "elemento2 elemento2" auto
             "elemento3 elemento3" auto
             "elemento4 elemento4" 0
@@ -1451,6 +1478,7 @@
                 display: none;
                }
 
+               
 }
 
 @media (min-width: 714px) and (max-width: 929px) {
@@ -1560,7 +1588,7 @@
         
     grid-template:
     "elemento1 elemento1" 15%
-    "elemento2 elemento2" 0
+    "elemento2 elemento2" auto
     "elemento3 elemento3" auto
     "elemento4 elemento4" 0
     "elemento5 elemento5" 100px /
@@ -1568,6 +1596,7 @@
     }
 
     .grid-container_legal {
+        height: auto;
         grid-template:
     "elemento1 elemento1" 15%
     "elemento2 elemento2" auto
@@ -1627,6 +1656,7 @@
     }
 
     .grid-container, .grid-container_legal {
+        height: auto;
     grid-template:
     "elemento1 elemento1 elemento1" 100px
     "elemento2 elemento3 elemento4" auto
@@ -1725,6 +1755,8 @@
         right: 10%;
 
     }
+
+    
 
     
 }
