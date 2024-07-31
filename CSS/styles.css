@@ -1,0 +1,2327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+* {/* configuracion inicial para que se aplique en general */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+header {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, #f4f4f4, #dedede );
+    
+}
+
+    .btn-wsp {
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 30px;
+        background: #0df053;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        align-content: center;
+        font-size: 30px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        display: flex;
+    align-items: center;
+    justify-content: center; /* Añadido para centrar horizontalmente */
+    transition: 0.3s ease-in-out all;
+}
+
+
+#twitter {
+    font-size: 19px;
+}
+
+#WhatsApp, #facebook, #instagram, #gmail, #twitter {
+    /* Estilos para el icono */
+    position: relative;
+    transition: transform 0.5s ease, color 0.5s ease;
+    
+}
+
+#WhatsApp:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    color: #fff; /* Cambio de color del icono al hacer hover */
+    background-color: #0df053; /* Color de fondo verde */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+#facebook:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    color: #fff; /* Cambio de color del icono al hacer hover */
+    background-color:  #3b5998; /* Color de fondo azul */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+#instagram:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    color: #fff; /* Cambio de color del icono al hacer hover */
+    background: linear-gradient(225deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); /* Fondo degradado */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+#gmail:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    background: linear-gradient(to right, #4285F4, #DB4437, #F4B400, #0F9D58); /* Fondo degradado con colores de Gmail */
+    -webkit-background-clip: text; /* Para hacer que el degradado afecte solo al texto */
+    background-clip: text; /* Para hacer que el degradado afecte solo al texto */
+    color: transparent; /* Hacer que el texto sea transparente para que se muestre el degradado */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+#twitter:hover {
+    transform: scale(1.5); /* Escalado del icono al hacer hover */
+    color: #ffffff; /* Cambio de color del icono al hacer hover */
+    background-color:  #000000; /* Color de fondo azul */
+    clip-path: circle(60%); /* Recorta el fondo para que tenga forma circular */
+}
+
+
+    .btn-wsp:hover {
+        text-decoration: none;
+        color: #0df053;
+        background: #fff;
+    }
+
+    .logo_header {
+        display: flex;
+        width: 7em;
+        height: 7em;
+        position: relative;
+        padding: 0.5px;
+        margin: 0 auto;
+        top: 15%;
+        
+        
+        
+        
+    }
+
+    .logo_header img {
+        width: 8em;
+        height: 5em;
+        position: relative;
+        bottom: 15%;
+        
+    
+    
+    border-radius: 10px; /* Tu valor de border-radius aquí */
+}
+
+.encuentro_letras {
+    display: flex;
+    position: relative;
+    
+    width: 100%;
+    height: 5em;
+    padding-left: 10%;
+    
+    overflow: hidden;
+
+    
+    
+}
+
+.encuentro_letras img {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    
+    
+}
+    
+
+
+
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.sin_hipervinculo {
+    
+    
+    
+    pointer-events: none; /* Deshabilita eventos de puntero */
+}
+
+.nav_list {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f4f4f4, #dedede );
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 20;
+    
+    
+    
+
+}
+
+
+.nav_list ul {
+    display: flex;
+    width: 100%;
+    height: 6em;
+    list-style: none;
+    
+    
+    background-color: #299bb6 ;
+    
+    
+
+    
+    
+    
+    
+
+}
+
+
+
+.nav_list ul li {
+    position: relative;
+    list-style: none;
+    width: 15px;
+    height: 60px;
+    z-index: 1;
+    margin: 0 auto;
+
+    
+}
+
+.nav_list ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+    
+    
+    
+   
+    
+    
+    
+    
+
+}
+
+.nav_list ul li a .icon {
+position: relative;
+display: block;
+line-height: 75px;
+font-size: 1.5em;
+text-align: center;
+transition: 0.5s;
+color: #fff;
+
+
+
+
+
+}
+
+.nav_list ul li a .icon {
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+    position: relative;
+    margin-left: 10px;
+    
+    
+
+}
+
+.nav_list ul li.active a .icon {
+    transform: translateY(-20px);
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav_list ul li a .text {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(50px);
+    pointer-events: none; 
+
+    
+
+}
+
+.nav_list ul li a .text {
+    
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+    transition: opacity 0.5s, transform 0.5s; /* Agrega la transición */
+}
+
+
+
+
+.nav_list ul li.active a .text {
+    opacity: 1;
+    transform: translateY(50%);
+    pointer-events: auto; 
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    
+    
+
+}
+
+.nav_list ul li a .text1 {
+    
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+    transition: opacity 0.5s, transform 0.5s; /* Agrega la transición */
+}
+
+.nav_list ul li.active a .text1 {
+    opacity: 1;
+    transform: translateY(40%);
+    pointer-events: auto; 
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 3.5em;
+    
+}
+
+.nav_list ul li a .text2 {
+    
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+    transition: opacity 0.5s, transform 0.5s; /* Agrega la transición */
+}
+
+.nav_list ul li.active a .text2 {
+    opacity: 1;
+    transform: translateY(-1.7em) translateX(0.3em);
+    pointer-events: auto; 
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10%;
+    
+}
+
+
+
+
+
+
+
+
+.icon-wrapper {
+    display: inline-block;
+    width: 2.5em; /* Ancho del ícono */
+    height: 2em; /* Altura del ícono */
+    font-size: 1em; /* Tamaño del ícono */
+    line-height: 3.4em; /* Alinear verticalmente el ícono */
+    overflow: hidden; /* Ocultar el contenido que exceda las dimensiones del contenedor */
+}
+
+/* Deshabilitar eventos de puntero para el contenedor del ícono */
+.icon-wrapper {
+    pointer-events: none;
+}
+
+
+.menu_vertical {
+    position: relative;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(41, 155, 182, 0.8);
+    
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;  /* Solo anima la opacidad y la visibilidad */
+}
+
+.menu_vertical.active {
+    display: block !important; 
+    opacity: 0.8;
+    visibility: visible;
+    width: 120px;
+    font-size: 1em;
+    height: 12em;
+    left: -350%;
+    
+}
+
+.menu_vertical li a {
+    padding: 0.5em;
+    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+    
+}
+
+
+
+
+    .icono_compartir {
+        display: flex;
+        padding: 0.5em;
+        background: linear-gradient(to right, #f4f4f4, #dedede );
+        color: #299bb6;
+        font-size: 1.1em;
+        justify-content: left; /* Centra los elementos horizontalmente */
+        height: 6em;
+        
+        
+    
+        
+        
+    }
+
+    .icono_compartir a {
+        margin: 0 auto; /* Ajusta el espaciado entre los íconos */
+    }
+
+    
+    
+
+    .nav_list li a{
+        display: flex;
+        margin: 0;
+        color: #fff;
+        
+        
+    }
+
+    .nav_list li {
+        margin: 0;
+        
+        
+        
+    }
+
+    .nav_list a {
+    text-decoration: none;
+    
+    margin: 0;
+    border: none;
+    color: #299bb6;
+    }
+
+    
+    
+    
+    
+
+    
+
+    
+
+    
+    
+
+    .flex-center {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 85em;
+        overflow: hidden;
+        
+        
+        
+    
+        
+    }
+    
+    
+    
+    @keyframes zoomIn {
+        from {
+        transform: scale(1);
+        }
+        to {
+        transform: scale(1.2);
+        }
+    }
+
+    .foto_fondo {
+    
+        
+        height: 15em;
+        top: 10%;
+    }
+
+    
+    #foto_fondo1:before {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 15em;
+        background-image: url('../img/fondo1.jpg');
+        background-size: cover;
+        border-radius: 1em;
+        
+        
+        background-position: center;
+        animation: zoomIn 5s ease forwards;
+        right: 10%;
+        top: 20%;
+        
+    }
+
+    .quienes_somos{
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 2em;
+        text-align: center;
+        position: relative;
+       top: 2%;
+        color: #299bb6;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        
+        
+
+        
+        
+        
+    }
+
+    .Titulo_quienes_somos {
+        font-weight: bold;
+        position: relative;
+        
+        margin: 0 auto;
+        
+
+        display: flex;
+        text-align: center;
+        
+        
+        
+        
+    }
+
+    .texto_quienes_somos {
+        
+        position: relative;
+        
+        text-align: justify;
+        width: 90%;
+        margin: 1em;
+        line-height: 1.5em;
+        top: 40%;
+    } 
+
+    .texto_proyectos_prodcutivos {
+        padding: 1em;
+        width: 90%;
+        text-align: justify;
+        margin-top: 1em;
+        line-height: 1.5em;
+        
+        position: relative;
+        top: 7%;
+        
+    }
+
+    .texto_proyectos_capacitaciones {
+        padding: 1em;
+        width: 90%;
+        text-align: justify;
+        margin-top: 1em;
+        line-height: 1.5em;
+        
+        position: relative;
+        top: 0;
+        left: 5%;
+        
+    }
+
+    .texto_proyectos_capacitaciones1 {
+        padding: 1em;
+        width: 90%;
+        text-align: justify;
+        margin-top: 1em;
+        line-height: 1.5em;
+        
+        position: relative;
+        top: 4%;
+        left: 5%;
+        
+    }
+
+    .tablon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 75em;
+        background: linear-gradient(45deg,#f1f1f1, #299bb6, #1b71aa);
+        background-size: 400%, 400%;
+        position: relative;
+        animation: cambiar 10s ease-in infinite;
+    }
+
+    @keyframes cambiar {
+        0% {background-position: 0 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0 50%;}
+    }
+
+    
+    .galeria_imagenes {
+        display: flex;
+        position: relative;
+        top: 6%;
+        width: 85%;
+        height: 430px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 1em;
+        
+    }
+
+    .galeria_imagenes img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: 2s ease;
+        border-radius: 1em;
+
+    }
+
+    .galeria_imagenes img:hover {
+        cursor: crosshair;
+        width: 75%;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+
+
+
+    
+
+
+
+    
+    
+    
+
+
+
+.nueva {
+    max-width: 17em;
+    padding: 1em;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: 0.6em;
+    
+    
+}
+
+.exclusion {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.3em;
+    font-size: 1.5em;
+    font-weight: 50;
+
+}
+
+.trabajo {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.3em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.oportunidad {
+    display: flex;
+    height: 2.2em;
+    width: 5.5em;
+    background: #d6d6d6;
+    color: #0e0e0e;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius:  0.5em;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    top: 7%;
+    
+    }
+
+.oportunidad:hover::after {
+    top: 0; 
+}
+
+
+.oportunidad span {
+    
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.oportunidad::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #eaeaea;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    
+    transition: .3s ease-in-out all;
+}
+
+.leo_concejo {
+    max-width: 100%;
+    height: 60em;
+    padding: 1em;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a column para colocar los elementos uno debajo del otro */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    
+    }
+
+.concejo_municipal {
+    width: 95%;
+    height: 5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 1%;
+    
+    
+    
+}
+
+.slider_concejo {
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    position: absolute;
+    top: 20%;
+    width: 90%;
+    
+}
+
+.slider {
+    display: flex;
+    max-width: 500px;
+    height: 300px;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+    
+    
+
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+.texto_leo_concejo {
+    padding: 1em;
+    width: 100%;
+    text-align: justify;
+    margin-top: 1em;
+    line-height: 1.5em;
+    top: 25%;
+    
+    position: relative;
+    
+    
+}
+
+
+
+
+
+.honestidad {
+    
+    display: flex;
+    height: 2.2em;
+    width: 5.5em;
+    background: #eaddcc;
+    color: #607a9d;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius:  0.5em;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    top: 25%;
+    left: 5%;
+    
+}
+
+.honestidad1 {
+    
+    display: flex;
+    height: 2.2em;
+    width: 5.5em;
+    background: #eaddcc;
+    color: #607a9d;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius:  0.5em;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    top: 2.5em;
+    left: 8%;
+    
+}
+
+.honestidad:hover {
+    transform: scale(1.1); /* Cambia el tamaño al 110% */
+}
+
+.celeste1 {
+    background-image:linear-gradient(to right, #1b71aa, #1b71aa,  #2796b4, #299bb6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+.produccion  {
+    color: white;
+    position: relative;
+    text-align: center;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+    font-size: 1.5em;
+    font-weight: 50;
+    margin: 0 auto;
+}
+
+.autogestion {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.3em;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+
+
+
+#fondo4 {
+    width: 100%;
+        height: 50em;
+        background-image: url('../img/WhatsApp\ Image\ 2023-10-21\ at\ 23.43.56.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        align-content: center;
+
+}
+
+
+
+.formacion {
+    width: 8.5em;
+    background: none;
+    color: #c1f1ede3;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+    background-color: none;
+    
+    cursor: pointer;
+    border: none;
+    padding: 0.3em;
+    transition: transform 0.3s ease;
+
+
+    
+    
+}
+
+.formacion svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    border-radius: 0.3em;
+}
+
+.formacion rect {
+    width: 100%;
+    height: 100%;
+    stroke: #1d9991;
+    stroke-width: 6px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: 6s ease all;
+    ;
+}
+
+.formacion:hover {
+    transform: scale(1.1); /* Cambia el tamaño al 110% */
+}
+
+
+.formacion:hover rect {
+    stroke-dashoffset: 0;
+}
+
+.encuentro_ideas {
+    position: relative;
+    top: 4em;
+}
+
+#fondo5 {
+    width: 100%;
+        height: 120em;
+        background-color:#f5f5f5;
+        background: linear-gradient(to right, #f4f4f4, #dedede );
+        
+        
+        
+       
+        
+        
+        
+
+}
+
+.novedades {
+    width: 95%;
+    position: relative;
+    text-align: justify;
+    overflow: hidden;
+    
+    
+    
+}
+
+.novedades1 {
+    font-size: 3em;
+    color: #299bb6;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+    
+}
+
+.novedades2 {
+    font-size: 3em;
+    color: #299bb6;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+    
+    
+}
+
+.proyectos_productivos {
+    position: absolute;
+    top: 2%;
+    height: 5em;
+    width: 100%;
+    
+    
+    
+    text-align: center;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.encuentroxrosario {
+    width: 100%;
+    font-size: 1.4em;
+    color: #299bb6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+    
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.video {
+    position: relative;
+    bottom: 10em;   
+    right: 10em;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 25em;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.monumento {
+    height: 15em;
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 2em;
+    transform: scale(0.8);
+    transition: .7s ease-in-out all;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    
+    
+}
+
+.monumento.visible {
+    opacity: 1;
+    transform: scale(0.9);
+    
+
+}
+
+.leo_manifestacion {
+    height: 15em;
+    width: 95%;
+    opacity: 0.5;
+    border-radius: 2em;
+    transform: scale(0.9);
+    transition: .7s ease-in-out all;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    position: relative;
+    left: 0.5em;
+
+}
+
+
+
+.leo_manifestacion.visible {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+
+}
+
+
+.cuerpo  {
+    color: #299bb6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    padding: 2em;
+    
+}
+
+.texto_quienes_somos {
+    color: #299bb6;
+    
+    text-align: justify;
+    padding: 1em;
+    
+}
+
+
+.ver_mas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 45%;
+    left: 9%;
+    background-color:#299bb6 ;
+    border: none;
+    height: 3em;
+    width: 7em;
+    border-radius:  0.5em;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    text-decoration: none;
+    
+    
+
+
+    
+}
+
+
+.ver_contenido {
+    display: flex;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+
+
+.ver_mas::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .4s ease-in-out all;
+    border-radius: 100px;
+    transform-origin: center;
+}
+
+.ver_mas:hover::after {
+    transform: scale(400);
+    background: #1b71aa;
+}
+
+.ver_mas span {
+    position: relative;
+    z-index: 2;
+}
+
+.ver_mas .ver_contenido {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+
+
+
+
+.container1 {
+    height: 2000px; /* Altura suficiente para permitir el scroll */
+    background-color: #f0f0f0;
+}
+
+
+
+.content {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.parte {
+    height: 15em;
+    width: 90%;
+    opacity: 1;
+    border-radius: 2em;
+    margin-top: 2em;
+    position: relative;
+    left: 1em;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 60em;
+    width: 100%;
+    background-color:#beb4b4;
+    background: linear-gradient(to right, #f3eeee, #b8b2b2 );
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo1 {
+    max-width: 100%;
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    order: 1;
+    
+
+}
+
+.logo1 img {
+    max-width: 12em;
+    border-radius: 1em;
+    padding: 0.3em;
+    background-color: transparent;
+
+    
+    }
+
+    .icono_compartir1 {
+        display: flex;
+        padding: 1em;
+        background-color:transparent;
+        color: #299bb6;
+        font-size: 1.5em;
+        order: 2;
+        margin-top: 2em;
+        
+    }
+
+    .icono_compartir1 i {
+        margin: 0.3em;
+        color: #299bb6;
+        
+            
+        
+    }
+
+    .info_legal {
+        display: flex;
+        list-style-type: none;
+        gap: 1em;
+        text-align: center;
+        justify-content: center ;
+        align-items: center;
+        order: 4;
+        top: 85%;
+        position: relative;
+        }
+    
+    .info_legal li a {
+        position: relative;
+        font-size: .6rem;
+        color: #299bb6;
+        
+        
+    }
+
+    .foot_text {
+        position: relative;
+        order: 3; /* Se muestra tercero */
+        margin: 0 auto; /* Centrado horizontal */
+        top: 85%;
+        
+        text-align: center;
+        color: #299bb6;
+        font-size: 0.9em;
+
+        
+    }
+
+    .boton_honestidad {
+        position: relative;
+        
+        top: 25%;
+    }
+
+    @media (min-width: 458px) and (max-width:552px) {
+
+        .quienes_somos {
+            top: 5%;
+        }
+        .encuentro_letras {
+            font-size: 1.2em;
+            padding-bottom: 1.5em;
+            margin-bottom: 1em;
+            position: relative;
+            top: 2%;
+            
+            
+        
+            
+            
+        }
+        .encuentro_letras img {
+            width: 95%;
+            height: 100%;
+            align-items: center;
+            
+        }
+
+        .logo_header {
+            position: relative;
+            padding-left: 3%;
+            padding-right: 3%;
+            
+            
+            
+        }
+
+        .logo_header img {
+            
+            position: relative;
+            
+    
+            
+        
+        
+        border-radius: 10px; /* Tu valor de border-radius aquí */
+    }
+
+    .flex-center {
+        height: 85em;
+    }
+
+    .texto_quienes_somos {
+        top: 40%;
+    }
+
+    .ver_mas {
+        top: 40%;
+    }
+
+    .boton_honestidad {
+        position: relative;
+        
+        top: 25%;
+    }
+
+    #foto_fondo1:before {
+        top: 20%;
+    }
+
+    
+
+        
+
+    }
+
+    /* Media query para pantallas más grandes, como tablets y desktop */
+@media (min-width: 553px) {
+    .encuentro_letras {
+        font-size: 1.2em;
+        padding-bottom: 1.5em;
+        margin-bottom: 1em;
+        position: relative;
+        top: 2%;
+        height: 5em;
+        
+        
+    
+        
+        
+    }
+
+    .encuentro_letras img {
+        width: 95%;
+        height: 100%;
+        align-items: center;
+        
+        
+        
+    }
+
+    
+
+    .logo_header img {
+        width: 8em;
+        height: 5em;
+        position: relative;
+        
+
+        
+    
+    
+    border-radius: 10px; /* Tu valor de border-radius aquí */
+}
+
+.logo_header {
+    position: relative;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+    
+    
+}
+
+.flex-center {
+    height: 75em;
+}
+
+.texto_quienes_somos {
+    top: 50%;
+}
+
+.ver_mas {
+    top: 60%;
+}
+
+.boton_honestidad {
+    position: relative;
+    top: 25%;
+    right: 35%;
+}
+
+.quienes_somos {
+    top: 5%;
+}
+
+#foto_fondo1:before {
+    top: 25%;
+}
+
+
+
+
+
+
+    
+
+    
+
+
+    .leo_concejo {
+        max-width: 120em;
+        padding: 1em;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a column para colocar los elementos uno debajo del otro */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+        
+        top: 25%;
+        
+        
+    }
+
+   
+
+    
+
+    .icono_compartir i {
+        font-size: 1.5em; /* Tamaño de los íconos */
+        
+        
+    }
+
+    .nav_list ul li a .icon {
+        
+        font-size: 1.5em;
+        
+    }
+
+    .nav_list ul li a .text {
+        
+        font-size: 1em;
+        
+    
+    }
+
+    .oportunidad {
+        top: 30%;
+    }
+
+    .slider_concejo {
+        align-items: center;
+        
+    }
+
+    .texto_leo_concejo {
+        
+        width: 90%;
+        
+        
+        top: 25%;
+        
+    }
+
+    .mySlides img {
+        vertical-align: middle;
+        border-radius: 15px;
+        height: 50em;
+    }
+
+    .honestidad1 {
+        top: 3em;
+        left: 5%;
+    }
+
+   
+
+    
+
+    
+
+    
+    
+}
+
+@media (min-width: 714px) and (max-width: 929px) {
+
+    .Titulo_quienes_somos {
+        font-weight: bold;
+        position: relative;
+        
+        margin: 0 auto;
+        
+
+        display: flex;
+        text-align: center;
+        
+        
+        
+        
+    }
+    
+
+    
+
+    .header {
+        height: 12em;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_productivo {
+        height: 12em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    
+    .encuentro_letras {
+        
+        padding-bottom: 1.5em;
+        margin: 0 auto;
+        position: relative;
+        top: 2%;
+        height: 6em;
+        z-index: 550;
+        
+        
+        
+        
+        
+        
+    
+        
+        
+    }
+
+    .encuentro_letras img {
+        width: 95%;
+        height: 6em;
+        
+        
+        
+    }
+
+    
+
+    .monumento {
+        height: 20em;
+        width: 100%;
+        opacity: 0.5;
+        border-radius: 2em;
+        transform: scale(0.8);
+        transition: .7s ease-in-out all;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        
+        
+    }
+
+    .leo_manifestacion {
+        height: 20em;
+        width: 95%;
+        opacity: 0.5;
+        border-radius: 2em;
+        transform: scale(0.9);
+        transition: .7s ease-in-out all;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        position: relative;
+        left: 0.5em;
+    
+    }
+    .novedades {
+        width: 95%;
+        position: relative;
+        text-align: justify;
+        overflow: hidden;
+        
+        
+        
+    }
+
+    
+
+    .icono_compartir i {
+        font-size: 2em; 
+        
+        
+    }
+
+
+
+    .nav_list ul li a .icon {
+        
+        font-size: 1.8em;
+        
+        
+    }
+
+    .nav_list ul li a .text {
+        
+        font-size: 1.3em;
+        
+    
+    }
+
+    .nav_list {
+        
+        width: 100%;
+        position: relative;
+        top: 25%;
+    height: 7em;
+        
+    }
+
+    
+
+
+    .nav_list ul {
+        width: 100%;
+        
+        position: relative;
+        top: 10%;
+        
+        
+        
+    }
+
+    
+    
+
+    .nav_list ul li.active a .text {
+        
+        transform: translateY(2vh);
+    
+    }
+
+    .icon-wrapper {
+        display: inline-block;
+        width: 2.5em; /* Ancho del ícono */
+        height: 1.5em; /* Altura del ícono */
+        font-size: 1em; /* Tamaño del ícono */
+        line-height: 2.5em; /* Alinear verticalmente el ícono */
+        overflow: hidden; /* Ocultar el contenido que exceda las dimensiones del contenedor */
+    }
+    
+    /* Deshabilitar eventos de puntero para el contenedor del ícono */
+    .icon-wrapper {
+        pointer-events: none;
+    }
+
+    .cuerpo  {
+    
+        text-align: justify;
+        width: 90%;
+        margin: 1.5em;
+        
+    }
+
+    #fondo5 {
+        height: 102em;
+    }
+
+    .logo_header {
+        position: relative;
+        padding-left: 3%;
+        padding-right: 15%;
+        
+        
+        
+    }
+
+    .logo_header img {
+        width: 10em;
+        height: 7em;
+        position: relative;
+        
+        border-radius: 10px;
+    }
+
+    .quienes_somos{
+        
+        
+        top: 25%;
+        
+        
+        
+
+        
+        
+        
+    }
+
+    .flex-center {
+        height: 70em;
+    }
+
+    #foto_fondo1:before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 15em;
+        right: 20%;
+        display: flex;
+
+        
+        top: 40%;
+    }
+
+    .texto_quienes_somos {
+        width: 90%;
+        top: 65%;
+        left: 5%;
+    }
+
+
+    .ver_mas {
+        top: 65%;
+    }
+
+    .oportunidad {
+        top: 40%;
+    }
+
+    .slider_concejo {
+        align-items: center;
+        
+    }
+
+    .mySlides img {
+        vertical-align: middle;
+        border-radius: 15px;
+        height: 50em;
+    }
+
+    .honestidad1 {
+        top: 3em;
+        left: 5%;
+    }
+    
+    
+
+
+
+    
+
+    
+}
+
+@media (min-width: 930px) {
+
+    
+    #fondo1 {
+        width: 100%;
+        height: 25em;
+        background-image: url('../img/carpinteria3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+        
+        
+    }
+    #fondo2 {
+        background-image: url('../img/IMG-20231207-WA0044\ \(6\).jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 35em;
+    
+    }
+
+    .nav_list ul li a .text {
+        font-size: 1.3em;
+    }
+
+    .leo_concejo {
+        max-width: 120em;
+        padding: 1em;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a column para colocar los elementos uno debajo del otro */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+        
+        
+        
+    }
+
+
+    
+
+    .monumento {
+        height: 20em;
+        width: 50%;
+        opacity: 0.5;
+        border-radius: 2em;
+        transform: scale(0.8);
+        transition: .7s ease-in-out all;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        
+        
+        
+    }
+
+    
+
+    .leo_manifestacion {
+        height: 20em;
+        width: 50%;
+        opacity: 0.5;
+        border-radius: 2em;
+        transform: scale(0.9);
+        transition: .7s ease-in-out all;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+        position: relative;
+        left: 0.5em;
+    
+    }
+    .novedades {
+        width: 100%;
+        position: relative;
+        height: 95em;
+        overflow: hidden;
+        top: 2%;
+        display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+        
+        
+        
+    }
+
+    #fondo5 {
+        width: 100%;
+            height: 102em;
+    }
+
+    .cuerpo {
+        color: #299bb6;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        text-align: justify;
+        width: 90%;
+        margin: 2em;
+        
+    }
+    
+    
+    .nueva {
+        max-width: 17em;
+        padding: 1em;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        top: 25%;
+        
+        
+    }
+
+    .nav_list {
+        
+        width: 100%;
+        height: 5em;
+        position: relative;
+        top: 7%;
+    }
+
+    .icon-wrapper {
+        display: inline-block;
+        width: 2.5em; /* Ancho del ícono */
+        height: 2em; /* Altura del ícono */
+        font-size: 1.3em; /* Tamaño del ícono */
+        line-height: 2.5em; /* Alinear verticalmente el ícono */
+        overflow: hidden; /* Ocultar el contenido que exceda las dimensiones del contenedor */
+    }
+    
+    /* Deshabilitar eventos de puntero para el contenedor del ícono */
+    .icon-wrapper {
+        pointer-events: none;
+    }
+
+    .nav_list ul {
+        width: 100%;
+        position: relative;
+        top: 62%;
+    }
+
+    .nav_list ul li.active a .icon {
+        transform: translateY(-15px);
+    }
+
+    .encuentro_letras {
+        
+        width: 100%;
+        height: 8em;
+        display: flex;
+        margin: 0 auto;
+        top: 2%;
+        
+        z-index: 550;
+        
+        
+        
+        
+        
+        
+        position: relative;
+    }
+
+    
+
+    header {
+        height: 16em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo_header {
+        
+        padding-left: 2%; 
+        
+        
+        
+    }
+
+    .logo_header img {
+        padding-top: 5%;
+
+        width: 12em;
+        height: 6.8em;
+        
+        
+        
+        
+        
+    }
+
+    .quienes_somos{
+        
+        
+        top: 5%;
+        
+        
+        
+
+        
+        
+        
+    }
+
+    .flex-center {
+        height: 85em;
+    }
+
+    .texto_quienes_somos {
+        
+        top: 56%;
+        left: 5%;
+    }
+
+    .ver_mas {
+        
+        top: 60%;
+        
+        
+    }
+
+    #foto_fondo1:before {
+        
+        width: 60%;
+        height: 20em;
+        right: 20%;
+    
+        top: 22%;
+    }
+
+    .foto_fondo {
+        height: 5em;
+        top: 10%;
+        background-color: #1b71aa;
+    }
+
+    .oportunidad {
+        top: 50%;
+    }
+
+    .boton_honestidad {
+        position: relative;
+        top: 29%;
+        right: 43%;
+    }
+
+    .slider_concejo {
+        
+        align-items: center;
+        height: 30em;
+        
+        
+    }
+
+    .slider{
+        
+
+        height: 25em;
+        
+    }
+
+    .galeria_imagenes {
+        display: flex;
+        position: relative;
+        
+        width: 70%;
+        height: 530px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 1em;
+        
+    }
+
+    .tablon {
+        height: 70em;
+    }
+
+    .texto_leo_concejo {
+        
+        width: 90%;
+        
+    }
+
+    .boton_honestidad {
+        margin-left: 3%;
+    }
+
+    .row .col.s12 {
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    .container {
+        position: relative;
+        top: 5%;
+        
+    }
+
+    
+
+    .texto_proyectos_capacitaciones {
+        top: 5%;
+    }
+
+    .hon_produccion {
+        position: relative;
+        top: 5%;
+        left: 1%;
+    }
+
+    .menu_vertical.active {
+        top: 0;
+        left: -350%;
+    }
+
+    .mySlides img {
+        vertical-align: middle;
+        border-radius: 15px;
+        height: 50em;
+    }
+
+    .honestidad1 {
+        top: 3em;
+        left: 6%;
+    }
+    
+    
+
+    
+
+    
+
+}
+
+
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+@media screen and (min-width: 667px)  and (max-width:714px) and (orientation: landscape) {
+
+
+
+    #fondo {
+        position: relative;
+        width: 100%;
+        
+        overflow: hidden;
+    }
+
+   
+
+    
+
+    #fondo1 {
+        width: 100%;
+        height: 25em;
+    }
+
+    #fondo2 {
+        width: 100%;
+        height: 35em;
+    }
+
+    #fondo3 {
+        width: 100%;
+        height: 30em;
+        background-image: url('../img/frutosterritorio2\(2\).jpg');
+    }
+
+    #fondo4 {
+        
+            height: 20em;
+            
+    
+    }
+
+    #fondo5 {
+        height: 83em;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .embed-container {
+        position: relative;
+        
+        display: flex;
+        height: 30em;
+        width: 100%;
+        align-content: center;
+        align-items: center;
+        
+        
+    
+    }
+    
+    .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 50%;
+        
+    }
+    
+    
+
+    footer {
+        height: 58em;
+        width: 100%;
+        
+    }
+
+    
+
+    .frutos_territorio {
+        
+        top: 60%;
+        
+        
+        
+    }
+
+    
+
+    
+
+    
+    
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 714px) and (max-width:1400px) and (orientation: landscape) {
+    
+
+    #fondo1 {
+        width: 100%;
+        height: 25em;
+    }
+
+    #fondo2 {
+        width: 100%;
+        height: 35em;
+    }
+
+    #fondo3 {
+        
+        background-image: url('../img/frutosterritorio2landscape1.jpg');
+    }
+
+
+    
+    
+    #fondo5 {
+        height: 103em;
+        width: 100%;
+        
+    }
+    
+
+    .nav_list ul li.active a .text {
+        opacity: 1;
+        transform: translateY(20px);
+        pointer-events: auto; 
+
+    }
+
+    .novedades {
+        width: 100%;
+        height: 93em;
+        
+
+    }
+
+    footer {
+        width: 100%;
+        height:  58em;
+    }
+
+    
+
+
+}
+
+@media screen and (min-width: 1226px) and (max-width: 1900px) and (orientation: landscape) {
+
+    #fondo3 {
+        
+        background-image: url('../img/frutosterritorio2landscape2.jpg');
+    }
+
+}
+
+
